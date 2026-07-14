@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 3 · Find the real problem - learn strategic thinking with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-strategic-thinking-with-phoebe</a> / Session 3 of 8</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Strategic Thinking with Phoebe · Session 3 of 8</div>
+    <h1>Find the real problem: <span class="accent">symptoms lie, roots don't</span></h1>
+    <p class="sub">Session 1's tree circled two leaves. Session 2 bet on the activation fix. Today you earn that bet: dig the churn leaf to its root cause with the three investigation tools every operations floor already trusts - is/is-not, 5 Whys, and the fishbone.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">Managers &amp; execs</span>
+      <span class="chip audience">Bring Session 1's circled leaves</span>
+      <span class="chip time">45 min live + self-study</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:3">3-18 · Concepts</span>
+      <span class="a3" style="flex:5">18-40 · Apply-along</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we left Nexa: a bet that needs a diagnosis</h2>
+    </div>
+    <p class="lede">The Q2 cohort's churn spiked to 3x baseline, Session 1's issue tree circled the churn leaf, and Session 2's matrix chose the activation fix. Notice the honest awkwardness: the room DECIDED before the diagnosis was proven - real companies do that all the time, because a reversible bet can start before certainty arrives. Today's session is how you check the bet is standing on rock: prove WHY those clients actually churned. If the root cause is what Tom suspects, the activation fix is aimed right. If it is not, better to know while the door still swings both ways.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill amber">★ Apply-along on Nexa</span>
+      <span class="pill inkpill">The case: Nexa, B2B2C SaaS</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A three-tool investigation kit and the order to use it in: fishbone for breadth (generate candidate causes), is/is-not as the filter (which candidates fit the facts), 5 Whys for depth (drill the survivor to a root you can act on). Plus Nexa's proven root cause - the fact the whole strategy now rests on.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: IS / IS-NOT ============ -->
+  <section class="section" id="isisnot">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · specify before you solve</span>
+      <h2>Is / Is-Not: the problem, pinned down <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Kepner-Tregoe's problem specification starts with a discipline most rooms skip: describe the problem precisely before touching causes. What IS affected - and, the magic column, what is NOT affected but could have been? The contrast between the two is where the cause hides.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Is / is-not grid for Nexa churn: what, where, when, extent rows against IS, IS-NOT and THEREFORE columns, pointing at the onboarding path">
+        <style>
+          .isnH { font: 700 13.5px Inter, sans-serif; fill: #FFFFFF; }
+          .isnR { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .isnC { font: 600 12px Inter, sans-serif; fill: #1C221F; }
+          .isnW { font: 700 12px Inter, sans-serif; fill: #C9930A; }
+          .isnX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+        </style>
+        <rect x="130" y="20" width="230" height="38" rx="8" fill="#1E6B4A"/>
+        <text class="isnH" x="146" y="44">IS (affected)</text>
+        <rect x="370" y="20" width="230" height="38" rx="8" fill="#2E8B62"/>
+        <text class="isnH" x="386" y="44">IS-NOT (spared)</text>
+        <rect x="610" y="20" width="230" height="38" rx="8" fill="#123A29"/>
+        <text class="isnH" x="626" y="44">THEREFORE...</text>
+        <rect x="20" y="66" width="100" height="52" rx="8" fill="#123A29"/>
+        <text class="isnR" x="36" y="96">What</text>
+        <rect x="130" y="66" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="146" y="88">Single-module clients</text>
+        <text class="isnC" x="146" y="106">churning at renewal</text>
+        <rect x="370" y="66" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="386" y="88">Multi-module clients</text>
+        <text class="isnC" x="386" y="106">(their NRR still 112%)</text>
+        <rect x="610" y="66" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnW" x="626" y="88">Tied to module</text>
+        <text class="isnW" x="626" y="106">adoption, not product</text>
+        <rect x="20" y="126" width="100" height="52" rx="8" fill="#123A29"/>
+        <text class="isnR" x="36" y="156">Where</text>
+        <rect x="130" y="126" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="146" y="148">Partner-reseller</text>
+        <text class="isnC" x="146" y="166">onboarded clients</text>
+        <rect x="370" y="126" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="386" y="148">Direct-onboarded</text>
+        <text class="isnC" x="386" y="166">clients, enterprise tier</text>
+        <rect x="610" y="126" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnW" x="626" y="148">The onboarding</text>
+        <text class="isnW" x="626" y="166">path is suspect</text>
+        <rect x="20" y="186" width="100" height="52" rx="8" fill="#123A29"/>
+        <text class="isnR" x="36" y="216">When</text>
+        <rect x="130" y="186" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="146" y="208">Q2 cohort onward</text>
+        <rect x="370" y="186" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="386" y="208">Older cohorts at</text>
+        <text class="isnC" x="386" y="226">normal churn</text>
+        <rect x="610" y="186" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnW" x="626" y="208">Something changed</text>
+        <text class="isnW" x="626" y="226">around Q2</text>
+        <rect x="20" y="246" width="100" height="52" rx="8" fill="#123A29"/>
+        <text class="isnR" x="36" y="276">Extent</text>
+        <rect x="130" y="246" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="146" y="268">3x the baseline</text>
+        <text class="isnC" x="146" y="286">churn rate</text>
+        <rect x="370" y="246" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnC" x="386" y="268">Not company-wide,</text>
+        <text class="isnC" x="386" y="286">not every segment</text>
+        <rect x="610" y="246" width="230" height="52" rx="8" fill="#EAF4EE"/>
+        <text class="isnW" x="626" y="268">Concentrated, not</text>
+        <text class="isnW" x="626" y="286">systemic decline</text>
+        <text class="isnX" x="20" y="322">Read the THEREFORE column top to bottom: module adoption + onboarding path + Q2 change + concentrated = go look at partner onboarding.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - Nexa's churn, specified before anyone touches causes</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Every IS needs an IS-NOT twin<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>The discipline:</strong> for every fact about what the problem IS (what, where, when, extent), write its twin - what it plausibly COULD have hit but did not. "Single-module clients churn" means little until you add "multi-module clients do not." The contrast IS the clue.</li>
+          <li><strong>Why rooms skip it:</strong> is-not data feels like non-news, so nobody collects it. But causes must explain BOTH columns - a "bad product" theory dies instantly against "direct-onboarded clients are fine."</li>
+          <li><strong>The THEREFORE column</strong> is where specification becomes direction: each row's contrast points somewhere. Four rows in, Nexa's grid is pointing hard at one thing - the partner onboarding path.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The quarter-long ghost hunt:</strong> an ops team chased a "quality problem" for three months - task forces, vendor audits, an all-hands. One afternoon with an is/is-not grid showed the defects were night-shift only, one supplier's batch only, after a materials change only. Fixed in a week. The grid did not find the cause; it shrank the haystack from "everything" to one aisle.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>8D: when a customer is bleeding NOW<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Ford's 8D (eight disciplines) adds the step every elegant root-cause method forgets: <strong>containment first</strong>. Form the team, describe the problem (D1-D2), then D3 - stop the bleeding with an interim fix BEFORE hunting the root cause (D4-D7), and close by preventing recurrence (D8).</p>
+        <p>The Nexa translation: while today's session digs for the root, Tom should already be calling every single-module client up for renewal in the next 60 days. Containment is not the fix - it buys the time to find the fix without losing another cohort. When something is actively costing customers, contain first, diagnose second, and never confuse the two.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: 5 WHYS ============ -->
+  <section class="section" id="fivewhys">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the drill</span>
+      <h2>5 Whys: drill until you hit process <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Toyota's factory-floor classic: ask "why?" until the answer stops being a symptom and starts being something you can fix on purpose. The is/is-not grid pointed at partner onboarding - now the drill goes down.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexa 5 whys chain from churn spike down to the root cause: a process gap where partner enablement was descoped">
+        <style>
+          .wyT { font: 700 13.5px Inter, sans-serif; fill: #FFFFFF; }
+          .wyS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .88; }
+          .wyR { font: 700 13.5px Inter, sans-serif; fill: #1C221F; }
+          .wyQ { font: 700 12px Inter, sans-serif; fill: #C9930A; }
+          .wyX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .wyA { stroke: #C3CEC7; stroke-width: 2; fill: none; marker-end: url(#wyAh); }
+        </style>
+        <defs>
+          <marker id="wyAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" fill="none" stroke="#C3CEC7" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <rect x="150" y="16" width="440" height="46" rx="10" fill="#123A29"/>
+        <text class="wyT" x="168" y="36">Churn spike: Q2 partner cohort, 3x baseline</text>
+        <text class="wyS" x="168" y="53">the symptom the board sees</text>
+        <line class="wyA" x1="370" y1="62" x2="370" y2="84"/>
+        <text class="wyQ" x="385" y="78">why?</text>
+        <rect x="150" y="88" width="440" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="wyT" x="168" y="108">Clients never activated a second module</text>
+        <text class="wyS" x="168" y="125">no usage habit formed - nothing to lose at renewal</text>
+        <line class="wyA" x1="370" y1="134" x2="370" y2="156"/>
+        <text class="wyQ" x="385" y="150">why?</text>
+        <rect x="150" y="160" width="440" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="wyT" x="168" y="180">No activation playbook in partner onboarding</text>
+        <text class="wyS" x="168" y="197">direct clients get one; partner clients never did</text>
+        <line class="wyA" x1="370" y1="206" x2="370" y2="228"/>
+        <text class="wyQ" x="385" y="222">why?</text>
+        <rect x="150" y="232" width="440" height="46" rx="10" fill="#2E8B62"/>
+        <text class="wyT" x="168" y="252">Partner enablement was never built</text>
+        <text class="wyS" x="168" y="269">assumed partners would copy the direct playbook</text>
+        <line class="wyA" x1="370" y1="278" x2="370" y2="300"/>
+        <text class="wyQ" x="385" y="294">why?</text>
+        <rect x="150" y="304" width="440" height="46" rx="10" fill="#2E8B62"/>
+        <text class="wyT" x="168" y="324">Channel launched under growth pressure</text>
+        <text class="wyS" x="168" y="341">enablement was descoped to hit the launch date</text>
+        <line class="wyA" x1="370" y1="350" x2="370" y2="372"/>
+        <text class="wyQ" x="385" y="366">root</text>
+        <rect x="150" y="376" width="440" height="42" rx="10" fill="#9BD4B6"/>
+        <text class="wyR" x="168" y="402">ROOT: a process gap, not a product gap</text>
+        <text class="wyX" x="610" y="400">← actionable: build partner</text>
+        <text class="wyX" x="610" y="418">enablement into onboarding</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the drill, from board-level symptom to fixable root</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The caveats that keep 5 Whys honest<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Stop at a cause you can act on.</strong> Five is a slogan, not a rule - Nexa hit an actionable root in five, but four or six is fine. Drill past "actionable" and you end up at "capitalism" - true, useless.</li>
+          <li><strong>Whys can branch.</strong> "Why did clients never activate a second module?" has two honest answers at Nexa (no playbook AND the second module is hard to discover in-product). Draw two chains when they branch; do not force one story.</li>
+          <li><strong>"Human error" is never a root.</strong> If a why lands on "someone forgot / someone made a mistake," ask why the system LET them - the next why down is always a missing checklist, handoff, or incentive. Roots live in process, not people.</li>
+          <li><strong>Test every link:</strong> "if we fixed this, would the spike vanish?" A why that fails the test is a passenger, not a cause.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The retraining that fixed nothing:</strong> a team's 5 Whys stopped at "the engineer misconfigured the deployment." They retrained the engineer; the outage returned in a month - different engineer, same misconfiguration. The second investigation asked one more why and found there was no pre-deploy checklist and no way to verify config before shipping. Checklist built, outage extinct. Blame is where lazy root-cause analysis goes to feel finished.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Fault tree analysis: when whys need AND/OR logic<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Born at Bell Labs in 1962 for missile safety, fault tree analysis is the engineer's upgrade to 5 Whys: start from the failure at the top, decompose downward through logic gates - this fails if A <strong>OR</strong> B happens; that fails only if C <strong>AND</strong> D happen together.</p>
+        <p>The gates matter because they change where you spend: an OR gate means every child is a full path to failure (harden all of them); an AND gate means killing ONE child kills the branch (harden the cheapest). Nexa's churn was an AND: no playbook AND no in-product discovery of the second module - which is genuinely good news, because fixing either one breaks the failure path. Overkill for most business problems; exactly right when the failure is rare, expensive, and multi-causal.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: FISHBONE ============ -->
+  <section class="section" id="fishbone">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · when causes swarm</span>
+      <h2>Fishbone: breadth before depth <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">The 5 Whys drills ONE hole, fast. But what if you drill the wrong spot? Kaoru Ishikawa's fishbone (1960s, Japanese quality movement) is the breadth tool: lay out every candidate cause family on the bones BEFORE choosing where to drill.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fishbone diagram for the Nexa churn spike with six bones - people, process, product, partner, pricing, competition - process and partner highlighted by the evidence">
+        <style>
+          .fbT { font: 700 12.5px Inter, sans-serif; fill: #FFFFFF; }
+          .fbC { font: 400 11.5px Inter, sans-serif; fill: #67736C; }
+          .fbHot { font: 600 11.5px Inter, sans-serif; fill: #C9930A; }
+          .fbL { stroke: #C3CEC7; stroke-width: 2; fill: none; }
+          .fbHL { stroke: #C9930A; stroke-width: 2.5; fill: none; }
+          .fbX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+        </style>
+        <line class="fbL" x1="60" y1="185" x2="720" y2="185"/>
+        <rect x="720" y="158" width="140" height="54" rx="10" fill="#123A29"/>
+        <text class="fbT" x="736" y="181">Churn spike</text>
+        <text class="fbT" x="736" y="199">3x baseline</text>
+        <line class="fbL" x1="185" y1="60" x2="245" y2="185"/>
+        <rect x="105" y="34" width="120" height="30" rx="8" fill="#1E6B4A"/>
+        <text class="fbT" x="121" y="54">People</text>
+        <text class="fbC" x="150" y="94">CS team stretched</text>
+        <text class="fbC" x="170" y="134">no partner training</text>
+        <line class="fbHL" x1="405" y1="60" x2="465" y2="185"/>
+        <rect x="325" y="34" width="120" height="30" rx="8" fill="#123A29"/>
+        <text class="fbT" x="341" y="54">Process ⚠</text>
+        <text class="fbHot" x="368" y="94">no activation playbook</text>
+        <text class="fbHot" x="390" y="134">handoff undefined</text>
+        <line class="fbL" x1="625" y1="60" x2="685" y2="185"/>
+        <rect x="545" y="34" width="120" height="30" rx="8" fill="#1E6B4A"/>
+        <text class="fbT" x="561" y="54">Product</text>
+        <text class="fbC" x="580" y="94">2nd module buried</text>
+        <text class="fbC" x="606" y="134">setup takes weeks</text>
+        <line class="fbHL" x1="185" y1="310" x2="245" y2="185"/>
+        <rect x="105" y="308" width="120" height="30" rx="8" fill="#123A29"/>
+        <text class="fbT" x="121" y="328">Partner ⚠</text>
+        <text class="fbHot" x="150" y="278">resellers sell + vanish</text>
+        <text class="fbHot" x="170" y="238">no usage visibility</text>
+        <line class="fbL" x1="405" y1="310" x2="465" y2="185"/>
+        <rect x="325" y="308" width="120" height="30" rx="8" fill="#1E6B4A"/>
+        <text class="fbT" x="341" y="328">Pricing</text>
+        <text class="fbC" x="370" y="278">renewal sticker shock</text>
+        <text class="fbC" x="390" y="238">no usage-based tier</text>
+        <line class="fbL" x1="625" y1="310" x2="685" y2="185"/>
+        <rect x="545" y="308" width="120" height="30" rx="8" fill="#1E6B4A"/>
+        <text class="fbT" x="561" y="328">Competition</text>
+        <text class="fbC" x="590" y="278">rivals 40% cheaper</text>
+        <text class="fbC" x="610" y="238">onboard in days</text>
+        <text class="fbX" x="60" y="368">Six bone families, two candidate causes each. ⚠ = where the is/is-not evidence landed: Process and Partner - drill there.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - every candidate cause on the table, before anyone drills</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The kit, in order: breadth → filter → depth<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Fishbone = breadth.</strong> Generate candidate causes across every family (pick bones that fit YOUR problem - Nexa's are People, Process, Product, Partner, Pricing, Competition). Its job is to stop the room from anchoring on the first plausible story.</li>
+          <li><strong>Is/is-not = the filter.</strong> Hold each candidate against the grid: does it explain BOTH columns? "Rivals are cheaper" fails - direct-onboarded clients face the same rivals and are not churning. The facts eliminated four of six bones in minutes.</li>
+          <li><strong>5 Whys = depth.</strong> Drill the surviving bone to an actionable root. For messy problems, run them in exactly that order - swarm, filter, drill.</li>
+          <li><strong>Nexa's verdict, proven:</strong> churned clients were single-module, onboarded by a partner reseller with no activation playbook, never built a usage habit, churned at renewal. Session 2's activation fix was aimed at the right root - now the room KNOWS instead of hopes.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          When a post-incident meeting spirals into competing theories, draw a spine and six bones on the whiteboard and park EVERY theory on a bone. Nobody's idea is rejected - it is placed. Then let the is/is-not facts do the eliminating. The diagram absorbs the politics so you don't have to.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Pareto analysis of causes: count before you drill<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Joseph Juran's "vital few, trivial many": before drilling any single cause, tally how often each candidate actually shows up in the data. Pull Nexa's last 40 churned accounts and count - how many were partner-onboarded and single-module? If it is 31 of 40, the fishbone's hot bones are confirmed in an afternoon. If it is 12, your neat story just met an inconvenient distribution.</p>
+        <p>The move is embarrassingly simple - a tally chart sorted tallest-first - which is why it gets skipped in rooms that prefer narrative to counting. Session 1's 80/20 instinct, now pointed at causes: drill where the count is, not where the loudest anecdote lives.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>DMAIC: when the problem is a process that drifts<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Today's kit suits EVENTS - a spike, an outage, a cohort gone wrong. When the problem is a process that slowly drifts (onboarding time creeping up, quality sliding a percent a quarter), Six Sigma's DMAIC is the wrapper: <strong>Define</strong> the defect in metric terms, <strong>Measure</strong> the baseline honestly, <strong>Analyze</strong> root causes (today's three tools slot in here), <strong>Improve</strong> with tested changes, <strong>Control</strong> so the fix sticks with monitoring and owners.</p>
+        <p>That last letter is the one Nexa will need in Session 7: an activation playbook that ships without a control plan - a metric, a dashboard, an owner - quietly rots back to baseline within a year. Fixes decay; Control is what stops them.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 1 of 3</span>
+      <h2>Pin the churn down: is / is-not <span class="tag demo">★ 7 min · everyone specifies</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Draw the grid: rows What / Where / When / Extent, columns IS / IS-NOT / THEREFORE. No causes allowed yet - specification only.</p></div>
+      <div class="step"><p>Fill the IS column from the case brief: single-module clients churning at renewal · partner-reseller onboarded · Q2 cohort onward · 3x baseline rate.</p></div>
+      <div class="step"><p>Now the twin for every row - what COULD have been hit but was not: multi-module clients (NRR 112%) · direct-onboarded and enterprise clients · older cohorts · not company-wide.</p></div>
+      <div class="step"><p>Write each row's THEREFORE and read the column aloud. The room should hear it converge: whatever this is, it lives in the partner onboarding path and it changed around Q2.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 2 of 3</span>
+      <h2>Drill the 5 whys, as a room <span class="tag demo">★ 8 min · everyone drills</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Start from the specified problem, not the vague one: "Q2 partner-onboarded single-module clients churn at 3x baseline." Ask the first why.</p></div>
+      <div class="step"><p>Drill: never activated a second module → no activation playbook in partner onboarding → partner enablement never built (assumed partners would copy the direct playbook) → channel launched under growth pressure, enablement descoped.</p></div>
+      <div class="step"><p>Test every link with the vanish test: "if we fixed THIS, would the spike vanish?" If a why fails the test, it is a passenger - strike it and re-ask.</p></div>
+      <div class="step"><p>Name the root out loud: <strong>a process gap, not a product gap</strong>. Notice what that sentence does to the meeting - Deven's product roadmap is off the hook, and the fix has an owner and a shape.</p></div>
+      <div class="step"><p>Check for branches: did anyone's chain fork at "why never activated"? (In-product discovery of module two is a real second chain.) Park it visibly - it feeds Session 5's offer redesign.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 3 ============ -->
+  <section class="section" id="demo-3">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 3 of 3</span>
+      <h2>Fishbone the OTHER leaf: win-rate collapse <span class="tag demo">★ 7 min · breadth only</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Session 1 circled TWO leaves. Churn is diagnosed - now swarm the other one: "win rate fell 31% → 22%." Spine and six bones on the whiteboard: People, Process, Product, Partner, Pricing, Competition.</p></div>
+      <div class="step"><p>Five minutes, breadth ONLY - two or three candidate causes per bone, no drilling, no debating. Every theory gets placed on a bone, none get argued yet.</p></div>
+      <div class="step"><p>Now light up the bones the case brief's facts already support: <strong>Competition</strong> (AI-native rivals priced 40% lower, onboarding in days not weeks) and <strong>Product</strong> (the demo shows one module while rivals demo an outcome).</p></div>
+      <div class="step"><p>Resist drilling - that is Session 4's job, where the external read (Five Forces, SWOT→TOWS) takes this exact fishbone as its starting point. Photograph it.</p></div>
+    </div>
+    <div class="callout tip">
+      <strong>Keep this artifact</strong>
+      Two leaves, two diagnoses, two different tools: churn needed depth (drill to root), win rate needs an external read first (the causes live outside the building). Choosing the right NEXT tool is the skill this course is quietly building.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">After the session</span>
+      <h2>This week <span class="tag exercise">◐ 30 min total</span></h2>
+    </div>
+    <ul>
+      <li><strong>Is/is-not one recurring problem at YOUR desk</strong> - the one that keeps coming back. Four rows, and be honest about the IS-NOT column: what does this problem mysteriously spare?</li>
+      <li><strong>Then 5-whys it:</strong> drill to a root you could act on Monday. Apply the two rules - stop at actionable, and if you hit "someone made a mistake," ask why the system let them.</li>
+      <li><strong>Read the self-study cards:</strong> Pareto analysis, fault trees, and especially 8D and DMAIC - contain-first and control-so-it-sticks are the two habits execs most often miss.</li>
+      <li><strong>Optional deep end:</strong> Kepner &amp; Tregoe's <em>The New Rational Manager</em> (the problem analysis chapter), or any decent write-up of Toyota's practical problem solving - the 8-step version shows where 5 Whys actually sits.</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What does the IS-NOT column actually do in a problem specification?</p>
+      <button class="qopt" type="button">A · Documents scope exclusions so the project stays contained</button>
+      <button class="qopt" type="button">B · Creates the contrast that eliminates causes - a real cause must explain both columns</button>
+      <button class="qopt" type="button">C · Lists the stakeholders who are not affected and need no comms</button>
+      <p class="qwhy">"Bad product" cannot explain why direct-onboarded clients are fine. Every candidate cause has to survive BOTH columns - the contrast is the filter.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · When do you STOP asking why?</p>
+      <button class="qopt" type="button">A · When you reach a cause you can act on - process, checklist, incentive, handoff</button>
+      <button class="qopt" type="button">B · At exactly five - that is the method</button>
+      <button class="qopt" type="button">C · When the room agrees on who was responsible</button>
+      <p class="qwhy">Five is a slogan. Stop at actionable; drill further and you reach true-but-useless. And "who was responsible" is never a root - ask why the system let it happen.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · Fishbone and 5 Whys - how do they divide the work?</p>
+      <button class="qopt" type="button">A · They are interchangeable - pick whichever the room knows</button>
+      <button class="qopt" type="button">B · Fishbone is for factories, 5 Whys is for business problems</button>
+      <button class="qopt" type="button">C · Fishbone generates candidate causes in breadth; 5 Whys drills one candidate to depth</button>
+      <p class="qwhy">Breadth then depth: swarm the candidates on the bones, filter them against the is/is-not facts, then drill the survivor. Order is the method.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Frameworks covered &amp; their origins</h2>
+    </div>
+    <p class="lede">This course teaches the working 80% of each framework and cites the canon - the original books and papers stay the deep end for anyone who wants it.</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">5 Whys (Sakichi Toyoda / Toyota Production System)</span><span class="note">the drill, stop-at-actionable, branching, never-blame - Part 2 + Apply-along 2</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Fishbone / Ishikawa diagram (Kaoru Ishikawa, 1960s)</span><span class="note">breadth before depth, bones fit the problem - Part 3 + Apply-along 3</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Is / Is-Not problem specification (Kepner-Tregoe)</span><span class="note">the IS-NOT twin, the THEREFORE column - Part 1 + Apply-along 1</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Pareto analysis of causes (Joseph Juran)</span><span class="note">self-study card, Part 3 - count before you drill</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Fault tree analysis (Bell Labs, 1962)</span><span class="note">self-study card, Part 2 - AND/OR gates</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">8D problem solving (Ford Motor Company)</span><span class="note">self-study card, Part 1 - contain first</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">DMAIC (Six Sigma - Motorola, GE)</span><span class="note">self-study card, Part 3 - for drifting processes; Control makes fixes stick</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Is / Is-Not</b><span>What/Where/When/Extent × IS/IS-NOT/THEREFORE. Every IS needs its twin - the contrast is the clue, and causes must explain both columns.</span></div>
+      <div class="cheat-item"><b>5 Whys</b><span>Drill the specified problem to an actionable root. Whys can branch - draw both chains. Test each link: fix this, does the spike vanish?</span></div>
+      <div class="cheat-item"><b>Fishbone</b><span>Spine + bones that fit YOUR problem. Breadth only - every theory gets placed, none rejected. Let the facts do the eliminating.</span></div>
+      <div class="cheat-item"><b>The order</b><span>Messy problem? Fishbone (swarm) → is/is-not (filter) → 5 Whys (drill). Breadth, filter, depth - in that order.</span></div>
+      <div class="cheat-item"><b>Root rules</b><span>Stop at actionable. "Human error" is never a root - ask why the system let them. Contain the bleeding first (8D), control the fix after (DMAIC).</span></div>
+      <div class="cheat-item"><b>Nexa so far</b><span>Root proven: partner-onboarded single-module clients, no activation playbook, no habit, churn. Process gap, not product gap - Session 2's bet holds.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Session 3 of 8 · learn-strategic-thinking-with-phoebe · by Phoebe Fu</span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="04-read-the-battlefield.html">Next: Read the battlefield →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

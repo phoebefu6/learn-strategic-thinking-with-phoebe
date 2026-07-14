@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 8 · The strategy stack - learn strategic thinking with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-strategic-thinking-with-phoebe</a> / Session 8 of 8</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Strategic Thinking with Phoebe · Session 8 of 8</div>
+    <h1>The strategy stack: <span class="accent">which model when, and the board pitch</span></h1>
+    <p class="sub">No new heavy frameworks today - you own fifty already. The capstone teaches the two skills that make them dangerous: SELECTING the right stack for the question in front of you, and ASSEMBLING seven sessions of Nexa artifacts into one board-ready recommendation. Then we deliver it, the way it would be delivered in the room.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Capstone</span>
+      <span class="chip audience">Managers &amp; execs</span>
+      <span class="chip audience">Bring all your Nexa artifacts</span>
+      <span class="chip time">45 min live + self-study</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:3">3-20 · Concepts</span>
+      <span class="a3" style="flex:5">20-42 · Apply-along</span>
+      <span class="a4" style="flex:1">42-45 · Send-off</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where seven sessions land</h2>
+    </div>
+    <p class="lede">You carved the stall (S1), decided among three bets (S2), dug the root cause (S3), read the battlefield (S4), redesigned the offer (S5), placed the growth horizons (S6), and found the customer leaks (S7). The frameworks did their jobs. Today they stop being a toolkit and become a strategy - and you learn the meta-skill this whole course was secretly about: knowing which model to reach for, and how their outputs snap together.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill amber">★ Apply-along on Nexa</span>
+      <span class="pill inkpill">The case: Nexa, B2B2C SaaS</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A one-page decision tree that routes any business question to the right framework stack, Rumelt's kernel as the assembly frame for everything you have built, and Nexa's final board pitch delivered live - plus YOUR kernel and 90-second pyramid pitch for the real problem you have carried since Session 1.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: WHICH FRAMEWORK WHEN ============ -->
+  <section class="section" id="selection">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the meta-skill</span>
+      <h2>Which framework when <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Fifty frameworks are useless if you reach for the wrong one - or for all of them. Selection starts with a single move: name the KIND of question you are holding. Every question in this course routes to one of six stacks, and each stack has a natural first tool.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Framework selection decision tree: the kind of question you are holding routes to one of six framework stacks">
+        <style>
+          .stT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .stS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .88; }
+          .stX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .stL { stroke: #C3CEC7; stroke-width: 2; fill: none; }
+          .stA { stroke: #C3CEC7; stroke-width: 2; fill: none; marker-end: url(#stAh); }
+        </style>
+        <defs>
+          <marker id="stAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" fill="none" stroke="#C3CEC7" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <rect x="20" y="175" width="180" height="78" rx="12" fill="#123A29"/>
+        <text class="stT" x="38" y="203">What kind of</text>
+        <text class="stT" x="38" y="221">question are</text>
+        <text class="stT" x="38" y="239">you holding?</text>
+        <line class="stL" x1="200" y1="214" x2="260" y2="39"/>
+        <line class="stL" x1="200" y1="214" x2="260" y2="105"/>
+        <line class="stL" x1="200" y1="214" x2="260" y2="171"/>
+        <line class="stL" x1="200" y1="214" x2="260" y2="237"/>
+        <line class="stL" x1="200" y1="214" x2="260" y2="303"/>
+        <line class="stL" x1="200" y1="214" x2="260" y2="369"/>
+        <rect x="260" y="16" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="44">Why is X happening?</text>
+        <rect x="260" y="82" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="110">Which option?</text>
+        <rect x="260" y="148" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="176">Where do we play?</text>
+        <rect x="260" y="214" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="242">How do we make money?</text>
+        <rect x="260" y="280" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="308">Where's growth next?</text>
+        <rect x="260" y="346" width="200" height="46" rx="10" fill="#1E6B4A"/>
+        <text class="stT" x="276" y="365">Why aren't customers</text>
+        <text class="stT" x="276" y="382">growing?</text>
+        <line class="stA" x1="460" y1="39" x2="526" y2="39"/>
+        <line class="stA" x1="460" y1="105" x2="526" y2="105"/>
+        <line class="stA" x1="460" y1="171" x2="526" y2="171"/>
+        <line class="stA" x1="460" y1="237" x2="526" y2="237"/>
+        <line class="stA" x1="460" y1="303" x2="526" y2="303"/>
+        <line class="stA" x1="460" y1="369" x2="526" y2="369"/>
+        <rect x="530" y="16" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="35">Investigation stack · S3</text>
+        <text class="stS" x="546" y="52">is/is-not → fishbone → 5 whys</text>
+        <rect x="530" y="82" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="101">Decision stack · S2</text>
+        <text class="stS" x="546" y="118">doors → matrix → pre-mortem</text>
+        <rect x="530" y="148" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="167">External stack · S4</text>
+        <text class="stS" x="546" y="184">SWOT-TOWS · Five Forces · PESTEL</text>
+        <rect x="530" y="214" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="233">Model stack · S5</text>
+        <text class="stS" x="546" y="250">BMC · Lean Canvas · VPC</text>
+        <rect x="530" y="280" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="299">Growth stack · S6</text>
+        <text class="stS" x="546" y="316">lifecycle · Three Horizons · Ansoff</text>
+        <rect x="530" y="346" width="320" height="46" rx="10" fill="#2E8B62"/>
+        <text class="stT" x="546" y="365">Customer stack · S7</text>
+        <text class="stS" x="546" y="382">lifecycle · AARRR · LTV/CAC</text>
+        <text class="stX" x="20" y="412">Route by the question, never by the framework you feel like using. Each stack's output becomes the next stack's input.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the selection tree: six question types, six stacks, one route each</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The three selection rules<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Start from the QUESTION, not the framework.</strong> "Let's do a SWOT" is a framework looking for a problem. "Why did the Q2 cohort churn?" is a question - and it routes itself: that is investigation work, and is/is-not goes first.</li>
+          <li><strong>One framework per question - stacks, not soups.</strong> Within a stack the tools sequence (is/is-not scopes, fishbone widens, 5 whys deepens). Across stacks, pick one lane and finish it. A page with a SWOT, a canvas, and a fishbone on it answered no question at all.</li>
+          <li><strong>Every framework's output feeds another's input.</strong> S3's root cause became S7's lifecycle fix; S4's TOWS actions became S6's horizon bets. If an analysis output feeds nothing downstream, ask why you did it.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The strategy offsite that produced eleven frameworks and zero decisions:</strong> a leadership team once spent two days filling every template in the facilitator's binder - and the CEO's closing summary was "great energy". Nobody had written the question on the wall first. The following quarter they ran ONE question ("where does the margin erosion come from?") through one stack, and cut the answer to the board in a week.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The 60-second triage<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Before any meeting, triage the question into one of four verbs - then the stack picks itself:</p>
+        <table class="clean">
+          <thead><tr><th>Verb</th><th>Sounds like</th><th>Stack</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Diagnose</strong></td><td>"Why is X happening?" · "What broke?"</td><td>Investigation (S3), or Customer (S7) if the X is customer numbers</td></tr>
+            <tr><td><strong>Decide</strong></td><td>"Which option?" · "Should we?"</td><td>Decision (S2) - doors first to size the stakes</td></tr>
+            <tr><td><strong>Design</strong></td><td>"How do we make money on this?" · "What's the offer?"</td><td>Model (S5), with the External stack (S4) as the reality check</td></tr>
+            <tr><td><strong>Grow</strong></td><td>"Where next?" · "What's the story for the raise?"</td><td>Growth (S6), fed by Customer (S7) numbers</td></tr>
+          </tbody>
+        </table>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          Say the triage out loud before the debate starts: "This is a diagnose question, so before anyone proposes fixes, let's spend ten minutes on what is and is not happening." You just chose the meeting's operating system in one sentence.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: STACKING INTO ONE NARRATIVE ============ -->
+  <section class="section" id="kernel">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · assembly</span>
+      <h2>Stacking into one narrative <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">Richard Rumelt's kernel (from <em>Good Strategy Bad Strategy</em>) is the assembly frame: a strategy is a <strong>diagnosis</strong> of what is really going on, a <strong>guiding policy</strong> for dealing with it, and a set of <strong>coherent actions</strong> that execute the policy. Deliver it pyramid-first (Minto, Session 1): answer, reasons, data underneath. Watch seven sessions of Nexa work slot in.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 370" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The strategy stack assembled: session artifacts feeding Rumelt's kernel of diagnosis, guiding policy, and coherent actions">
+        <style>
+          .kkT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .kkS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .9; }
+          .kkI { font: 700 13px Inter, sans-serif; fill: #1C221F; }
+          .kkJ { font: 400 11.5px Inter, sans-serif; fill: #67736C; }
+          .kkX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .kkA { stroke: #C3CEC7; stroke-width: 2; fill: none; marker-end: url(#kkAh); }
+        </style>
+        <defs>
+          <marker id="kkAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" fill="none" stroke="#C3CEC7" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <rect x="30" y="35" width="260" height="54" rx="10" fill="#EAF4EE"/>
+        <text class="kkI" x="46" y="57">Sessions 1 + 3</text>
+        <text class="kkJ" x="46" y="75">issue tree · root cause</text>
+        <rect x="30" y="140" width="260" height="54" rx="10" fill="#EAF4EE"/>
+        <text class="kkI" x="46" y="162">Sessions 4 + 6</text>
+        <text class="kkJ" x="46" y="180">outside read · horizons</text>
+        <rect x="30" y="256" width="260" height="54" rx="10" fill="#EAF4EE"/>
+        <text class="kkI" x="46" y="278">Sessions 2 + 5 + 7</text>
+        <text class="kkJ" x="46" y="296">verdict · starter tier · leak fixes</text>
+        <line class="kkA" x1="290" y1="62" x2="354" y2="62"/>
+        <line class="kkA" x1="290" y1="167" x2="354" y2="167"/>
+        <line class="kkA" x1="290" y1="283" x2="354" y2="283"/>
+        <rect x="360" y="30" width="490" height="64" rx="12" fill="#123A29"/>
+        <text class="kkT" x="378" y="54">1 · DIAGNOSIS</text>
+        <text class="kkS" x="378" y="76">"The stall is an activation problem, not a market problem."</text>
+        <rect x="360" y="135" width="490" height="64" rx="12" fill="#1E6B4A"/>
+        <text class="kkT" x="378" y="159">2 · GUIDING POLICY</text>
+        <text class="kkS" x="378" y="181">"Win on depth and the consumer side, not on price."</text>
+        <rect x="360" y="240" width="490" height="88" rx="12" fill="#2E8B62"/>
+        <text class="kkT" x="378" y="262">3 · COHERENT ACTIONS</text>
+        <text class="kkS" x="378" y="282">H1 · activation playbook + starter-tier experiment</text>
+        <text class="kkS" x="378" y="299">H2 · AI copilot, funded to a gate</text>
+        <text class="kkS" x="378" y="316">H3 · consumer-side network effect</text>
+        <line class="kkA" x1="605" y1="94" x2="605" y2="131"/>
+        <line class="kkA" x1="605" y1="199" x2="605" y2="236"/>
+        <text class="kkX" x="30" y="358">Each session's artifact slots into Rumelt's kernel - then the whole thing is told pyramid-first: answer, reasons, data underneath.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the strategy stack assembled: seven sessions, one kernel</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What makes strategy BAD (Rumelt)<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Rumelt is more useful on bad strategy than on good, because bad strategy is what boards actually see. His three tells:</p>
+        <ul>
+          <li><strong>Fluff:</strong> abstraction dressed as insight. "We will leverage synergies to become the customer-centric platform of choice" says nothing a competitor would disagree with.</li>
+          <li><strong>Goals mistaken for strategy:</strong> "grow 25%" is a wish. A strategy says what obstacle stands in the way and how you will get past it. Nexa's board deck last year said "return to 30% growth" - and that was the whole slide.</li>
+          <li><strong>The dog's-dinner action list:</strong> twelve initiatives, one per department, no policy connecting them. Everyone got their pet project funded; nothing compounds.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The tell you can spot in ten seconds:</strong> a strategy deck where deleting the company name and pasting in a rival's changes nothing. One exec team ran that exact test on their own annual plan - it survived the swap perfectly, which was the most useful finding of the offsite. A real diagnosis (like "our churn is a partner-onboarding gap") never survives it.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The coherence test<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Line up your actions and ask: <strong>could you delete one without weakening the others?</strong> If yes, it is a list, not a strategy. Coherent actions reinforce each other because they all execute the same policy.</p>
+        <ul>
+          <li>Run it on Nexa: the activation playbook (H1) creates multi-module habits → which is exactly the usage data the copilot (H2) learns from → which is what makes the consumer-side network effect (H3) more than a slogan. Delete H1 and H2 starves; the chain snaps.</li>
+          <li>Run it on the rejected path: "fix activation + push enterprise + cut price" fails instantly - enterprise pushes AWAY from the depth policy, and the price cut fights the starter tier's cleaner answer to the same need.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          In any strategy review, pick the weakest-looking initiative and ask "what breaks if we cut this?" A confident, specific answer means coherence. A defensive silence means you found budget wearing a strategy costume.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE BOARD PITCH ============ -->
+  <section class="section" id="pitch">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the room</span>
+      <h2>The board pitch <span class="tag concept">4 min live</span></h2>
+    </div>
+    <p class="lede">Here is the whole course cashed in: Nexa's recommendation, delivered exactly as it would be with the chairman across the table. Pyramid form, about 120 words, every number earned in a previous session.</p>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The pitch, verbatim<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>"We recommend: fix the leak, fund the copilot, explore the network effect.</strong> Three reasons. One - the stall is an activation problem, not a market problem: churn is concentrated in single-module clients onboarded by partner resellers with no activation playbook, while multi-module NRR is still healthy. Two - our right to win is depth and the consumer side, not price: two AI-native rivals own cheap-and-fast, and we will not outrun them there. Three - the economics are visible: closing the activation leak recovers most of the $8M annual NRR swing, and the starter-tier experiment validated a path to new logos. <strong>The ask: approve the 50-client activation pilot, fund the copilot to a Horizon 2 gate, and put one metric on the board pack - activation rate."</strong></p>
+        <div class="callout tip">
+          <strong>Why it lands</strong>
+          Answer in sentence one. Reasons MECE (problem, right to win, economics). Actions coherent - each feeds the next. The ask is concrete, gated, and measurable. Nothing in it requires the deck; the deck is just the data layer waiting underneath.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Handling the chairman's five questions<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every board pitch meets the same five questions. Each one is answered in a single sentence, pulled straight from an earlier session's artifact:</p>
+        <table class="clean">
+          <thead><tr><th>Question</th><th>One-sentence answer (source)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Why now?</strong></td><td>NRR has slid from 118% to 98% over six quarters, and with ~30 months of runway the next raise needs a credible growth story, not a hope. (S1, S6)</td></tr>
+            <tr><td><strong>Why us?</strong></td><td>Multi-module clients still expand healthily, and we hold the workflow depth plus 8M consumer touchpoints the AI-natives do not. (S4)</td></tr>
+            <tr><td><strong>What kills this?</strong></td><td>The pre-mortem's top risk is that the pilot fixes setup but not habit - so the pilot measures weekly active usage, not onboarding completion. (S2)</td></tr>
+            <tr><td><strong>What does it cost?</strong></td><td>The pilot redeploys existing CS capacity; copilot funding is staged and released only if H1 metrics hold at the gate. (S2, S6)</td></tr>
+            <tr><td><strong>How do we know it's working?</strong></td><td>One board metric: activation rate - new clients live on a second module within 90 days. (S7)</td></tr>
+          </tbody>
+        </table>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The one-sentence discipline is the point:</strong> a CFO once told a strategy lead "you answered my kill question in nine words, so I stopped trying to kill it." Boards probe for whether YOU have already probed. Pre-answered questions read as de-risked strategy; improvised answers read as optimism.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 4: SELF-STUDY DEEP END ============ -->
+  <section class="section" id="deepend">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · the deep end</span>
+      <h2>After the room: anti-patterns and the execution bridge</h2>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The anti-patterns gallery<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Framework theater:</strong> decks full of beautifully filled templates and no decision. The test from Part 1 applies - if an output feeds nothing downstream, it was performance, not analysis.</li>
+          <li><strong>The SWOT graveyard:</strong> a SWOT that never became TOWS actions (Session 4's whole point). Strengths lists are where strategy goes to feel busy.</li>
+          <li><strong>Analysis as procrastination:</strong> the fifth layer of the issue tree, the third market study - rigor that exists to delay a decision someone is afraid to make. The doors test (S2) is the antidote: if it is reversible, decide today.</li>
+          <li><strong>The McKinsey 7S name-check:</strong> dropped into decks to sound thorough, almost never actually used. Honest note: 7S IS useful - for org alignment AFTER a strategy change, checking that structure, systems, staff, skills, style, and shared values line up behind the new direction. Nexa should run it in six months, not now.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>OKR: the execution bridge<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Strategy without an execution bridge decays into the dog's dinner within two quarters. Andy Grove's OKRs (evangelized by John Doerr in <em>Measure What Matters</em>) are the simplest bridge: the strategy's H1 becomes one objective with three measurable key results. For Nexa's activation fix:</p>
+        <table class="clean">
+          <thead><tr><th></th><th>Nexa H1, as an OKR</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Objective</strong></td><td>New clients build a multi-module habit in their first 90 days</td></tr>
+            <tr><td><strong>KR1</strong></td><td>Activation rate (second module live within 90 days) from ~30% to 55%</td></tr>
+            <tr><td><strong>KR2</strong></td><td>100% of partner-reseller onboardings run the activation playbook (from 0%)</td></tr>
+            <tr><td><strong>KR3</strong></td><td>Single-module cohort churn run-rate cut by a third by the H2 funding gate</td></tr>
+          </tbody>
+        </table>
+        <p>Note what the OKR is NOT: it is not the strategy. It is the strategy's first 90 days, made countable.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Balanced scorecard: keeping the horizons honest<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Kaplan &amp; Norton's balanced scorecard (HBR, 1992) tracks four perspectives - financial, customer, internal process, learning &amp; growth - precisely so the financial view cannot strangle the others. For Nexa it is the guard rail on the three-horizon plan: H1's activation economics live in the financial and customer rows, but the copilot (H2) and network effect (H3) are learning bets - measured on validated learning, not revenue, until their gates. A board that scores all three horizons on this quarter's revenue will kill its own future and call it discipline.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 1 of 3</span>
+      <h2>The triage drill <span class="tag demo">★ 7 min · tables route</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Facilitator reads six real-sounding questions, one at a time: "our best engineers keep leaving" · "should we open a Singapore office" · "the new tier isn't selling" · "margin is eroding 2 points a year" · "which of these 3 vendors" · "the board wants an AI story".</p></div>
+      <div class="step"><p>For each: tables get 45 seconds to route it through the tree - name the question TYPE, the stack, and the FIRST framework they would reach for.</p></div>
+      <div class="step"><p>Compare answers out loud. Expected routes: engineers leaving → diagnose → is/is-not first. Singapore → decide → doors first (it is a one-way-ish door, so slow down). New tier not selling → diagnose BEFORE redesigning the offer - is/is-not, not a new canvas. Margin erosion → diagnose → is/is-not, then fishbone. Three vendors → decide → weighted matrix. AI story → grow → Three Horizons first.</p></div>
+      <div class="step"><p>Debrief the traps: two of the six tempt you into the wrong stack (the tier question begs for a canvas, the AI question begs for a tech deep-dive). The question type, not the topic, picks the stack.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 2 of 3</span>
+      <h2>Write YOUR kernel <span class="tag demo">★ 8 min · everyone writes</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Take the real problem you have carried through the homework since Session 1 - the issue tree from week one, whatever artifacts you built since.</p></div>
+      <div class="step"><p>Write the three kernel lines: DIAGNOSIS (what is really going on, one sentence, "X not Y" form), GUIDING POLICY (how you will deal with it - a direction that says no to something), COHERENT ACTIONS (2-4 moves that reinforce each other).</p></div>
+      <div class="step"><p>Run the two tests on your own draft: the rival-name swap on the diagnosis (would it survive being pasted into a competitor's deck?), the delete-one test on the actions.</p></div>
+      <div class="step"><p>Swap with a neighbor: each reads the other's kernel cold and says the diagnosis back in their own words. If it comes back as fluff, the diagnosis was fluff.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 3 ============ -->
+  <section class="section" id="demo-3">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 3 of 3</span>
+      <h2>Pitch it: 90 seconds, answer first <span class="tag demo">★ 7 min · 3 volunteers</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Three volunteers deliver their pyramid pitch to the room, 90 seconds each: answer sentence, reasons, the ask. Standing up. No slides.</p></div>
+      <div class="step"><p>The room scores each on three checks, thumbs up or down: <strong>answer first?</strong> (did sentence one carry the recommendation) · <strong>reasons MECE?</strong> (no overlaps, no obvious gap) · <strong>actions coherent?</strong> (would deleting one weaken the rest).</p></div>
+      <div class="step"><p>Thirty seconds of feedforward per pitch (one improvement, not a review). Then the closer, back at Session 1's promise: compare this pitch to the three-sentence pyramid you wrote that day. That distance is the course.</p></div>
+    </div>
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p>The 90-second constraint is not theater - it is the actual size of the slot. Board agendas slip, the chairman's flight boards at six, and the corridor version IS the pitch more often than the scheduled one. Strategists who can only deliver the 30-minute version do not get to deliver at all.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">After the session - the send-off</span>
+      <h2>This is now yours <span class="tag exercise">◐ the rest of your career</span></h2>
+    </div>
+    <ul>
+      <li><strong>Deliver the pitch for real within 2 weeks.</strong> The kernel and pyramid you wrote today go in front of the person who can act on them - boss, board, or team. Strategy unpitched is strategy undone.</li>
+      <li><strong>Print the framework map</strong> (<a href="../materials/framework-map.md">materials/framework-map.md</a>) - it is now your permanent cheat sheet: every framework in the course, its depth, and its original source.</li>
+      <li><strong>Revisit session pages before the matching meeting type:</strong> Session 2 before a big decision, Session 3 before a post-mortem, Session 4 before an offsite, Session 7 before the churn review. The pages were built as pre-meeting references, not just courseware.</li>
+      <li><strong>Optional deep end:</strong> Richard Rumelt's <em>Good Strategy Bad Strategy</em> in full - the kernel chapters will read differently now that you have built one.</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · A colleague opens a working session with "let's start with a SWOT". The first selection rule says...</p>
+      <button class="qopt" type="button">A · Fine - SWOT is the universal opener for any strategy work</button>
+      <button class="qopt" type="button">B · Start from the question you are holding, then pick the stack built for that question type</button>
+      <button class="qopt" type="button">C · Run all six stacks in parallel and compare outputs</button>
+      <p class="qwhy">Frameworks answer question types. Until the question is named (diagnose? decide? design? grow?), any framework is a soup ingredient looking for a soup.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Rumelt's kernel of a good strategy has exactly three parts. They are...</p>
+      <button class="qopt" type="button">A · Diagnosis, guiding policy, coherent actions</button>
+      <button class="qopt" type="button">B · Mission, vision, values</button>
+      <button class="qopt" type="button">C · Strengths, opportunities, initiatives</button>
+      <p class="qwhy">Diagnosis (what is really going on), guiding policy (the direction that says no to something), coherent actions (moves that reinforce each other). Everything else is packaging.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · The coherence test on an action list asks...</p>
+      <button class="qopt" type="button">A · Does every action have an owner, a budget, and a deadline?</button>
+      <button class="qopt" type="button">B · Is there at least one action per department, so everyone is bought in?</button>
+      <button class="qopt" type="button">C · Could you delete one action without weakening the others? If yes, it is a list, not a strategy</button>
+      <p class="qwhy">Owners and deadlines are execution hygiene, and one-per-department is exactly Rumelt's dog's dinner. Coherent actions compound - remove one and the chain visibly weakens.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Frameworks covered &amp; their origins</h2>
+    </div>
+    <p class="lede">The capstone teaches selection and assembly rather than new machinery - the sources below are where the assembly ideas come from, and where to go deeper.</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Framework-selection decision tree ("which model when")</span><span class="note">this course - Part 1 + Apply-along 1</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Stacking frameworks into one board narrative</span><span class="note">Minto pyramid + Rumelt kernel - Part 2 + Apply-along 2</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Nexa final recommendation walkthrough</span><span class="note">running case - Part 3 + Apply-along 3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Anti-patterns: framework theater, SWOT graveyard (Rumelt, <em>Good Strategy Bad Strategy</em>)</span><span class="note">self-study card, Part 4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">McKinsey 7S</span><span class="note">one-row cameo in the anti-patterns card - useful for org alignment AFTER a strategy change</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">OKR as execution bridge (Andy Grove; John Doerr)</span><span class="note">self-study card, Part 4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Balanced scorecard (Kaplan &amp; Norton, HBR 1992)</span><span class="note">self-study card, Part 4</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 8 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The triage</b><span>Name the verb first: diagnose, decide, design, or grow. The verb picks the stack; the stack picks the first tool.</span></div>
+      <div class="cheat-item"><b>Selection rules</b><span>Question before framework · one stack per question, never soups · every output must feed a downstream input.</span></div>
+      <div class="cheat-item"><b>Rumelt's kernel</b><span>Diagnosis → guiding policy → coherent actions. A policy that says no to nothing is fluff; a goal is not a strategy.</span></div>
+      <div class="cheat-item"><b>Coherence test</b><span>Delete one action - do the others weaken? No = it is a list. Also run the rival-name swap on the diagnosis.</span></div>
+      <div class="cheat-item"><b>The board pitch</b><span>Answer in sentence one, three MECE reasons with numbers, a concrete gated ask, ONE board metric. 120 words, 90 seconds.</span></div>
+      <div class="cheat-item"><b>The whole course in one line</b><span>Carve it, map it, decide it, verify it, model it, time it, price it, tell it top-down.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Session 8 of 8 · learn-strategic-thinking-with-phoebe · by Phoebe Fu</span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="01-think-like-a-strategist.html">Back to the start: Session 1 →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

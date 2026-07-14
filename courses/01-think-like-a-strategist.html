@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 1 · Think like a strategist - learn strategic thinking with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-strategic-thinking-with-phoebe</a> / Session 1 of 8</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Strategic Thinking with Phoebe · Session 1 of 8</div>
+    <h1>Think like a strategist: <span class="accent">structure before answers</span></h1>
+    <p class="sub">The foundation under every framework in this course: MECE, issue trees, the Pyramid Principle, and 80/20. You will use these four in every session after this one - and on Nexa, our running case, starting in the next 20 minutes.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Foundation</span>
+      <span class="chip audience">Managers &amp; execs</span>
+      <span class="chip audience">No prep needed</span>
+      <span class="chip time">45 min live + self-study</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:3">3-18 · Concepts</span>
+      <span class="a3" style="flex:5">18-40 · Apply-along</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Why this course exists</h2>
+    </div>
+    <p class="lede">Most managers collect frameworks like souvenirs - a SWOT here, a canvas there - and still walk into the board meeting with opinions instead of structure. This course teaches 50+ thinking models the way strategists actually use them: as a stack, applied to one real business. Meet <strong>Nexa</strong>, a $40M ARR B2B2C SaaS platform whose growth has stalled. Over 8 sessions you will diagnose it, decide for it, and build its board-ready strategy - framework by framework.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill amber">★ Apply-along on Nexa</span>
+      <span class="pill inkpill">The case: Nexa, B2B2C SaaS</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The four thinking habits under all strategy work: carving problems MECE, growing an issue tree, answering top-down with the Pyramid Principle, and cutting scope with 80/20. Plus your first Nexa artifact: a one-page issue tree for "why has growth stalled?".
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE CASE + MECE ============ -->
+  <section class="section" id="mece">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the problem with opinions</span>
+      <h2>MECE: carve the problem cleanly <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Nexa's board asks "why is growth stalling?" and gets three answers: the CPO says product, the CRO says market, the CS lead says churn. All plausible, all overlapping, none complete. MECE - Mutually Exclusive, Collectively Exhaustive - is the discipline that turns that noise into a clean carve.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MECE: overlapping messy buckets versus clean mutually exclusive collectively exhaustive buckets">
+        <style>
+          .mcT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .mcH { font: 700 15px Inter, sans-serif; fill: #1C221F; }
+          .mcX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .mcB { font: 600 12.5px Inter, sans-serif; fill: #B42318; }
+          .mcG { font: 600 12.5px Inter, sans-serif; fill: #1E6B4A; }
+        </style>
+        <text class="mcH" x="40" y="35">✗ The meeting version</text>
+        <rect x="40" y="55" width="180" height="44" rx="10" fill="#C3CEC7"/>
+        <text class="mcT" x="58" y="82" style="fill:#1C221F">"Product gaps"</text>
+        <rect x="150" y="112" width="180" height="44" rx="10" fill="#C3CEC7"/>
+        <text class="mcT" x="168" y="139" style="fill:#1C221F">"Churn is up"</text>
+        <rect x="60" y="169" width="180" height="44" rx="10" fill="#C3CEC7"/>
+        <text class="mcT" x="78" y="196" style="fill:#1C221F">"Competitors"</text>
+        <text class="mcB" x="40" y="245">Overlaps (churn IS partly product)</text>
+        <text class="mcB" x="40" y="265">Gaps (nobody said pricing or new logos)</text>
+        <line x1="440" y1="30" x2="440" y2="270" stroke="#C3CEC7" stroke-width="2"/>
+        <text class="mcH" x="480" y="35">✓ The MECE carve: growth = new + existing revenue</text>
+        <rect x="480" y="55" width="360" height="40" rx="10" fill="#123A29"/>
+        <text class="mcT" x="498" y="80">Growth stall = f(new logos, existing clients)</text>
+        <rect x="480" y="108" width="172" height="40" rx="10" fill="#1E6B4A"/>
+        <text class="mcT" x="494" y="133">New: fewer wins</text>
+        <rect x="668" y="108" width="172" height="40" rx="10" fill="#1E6B4A"/>
+        <text class="mcT" x="682" y="133">Existing: NRR falling</text>
+        <rect x="480" y="161" width="172" height="40" rx="10" fill="#2E8B62"/>
+        <text class="mcT" x="494" y="186">volume × win rate</text>
+        <rect x="668" y="161" width="172" height="40" rx="10" fill="#2E8B62"/>
+        <text class="mcT" x="682" y="186">churn vs expansion</text>
+        <text class="mcG" x="480" y="245">No overlap: every dollar is new or existing</text>
+        <text class="mcG" x="480" y="265">No gap: together they ARE revenue growth</text>
+        <text class="mcX" x="40" y="292">MECE test: can one fact land in two buckets? (not exclusive) Can a fact land in none? (not exhaustive)</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the same question, carved two ways</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Mutually exclusive, collectively exhaustive<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>MECE is a quality bar for any list you make: categories that do not overlap (mutually exclusive) and that together cover everything (collectively exhaustive). It is the single most-used idea in consulting for a reason - a MECE carve means nothing gets counted twice and nothing gets missed.</p>
+        <ul>
+          <li><strong>Cheap MECE cuts that almost always work:</strong> new vs existing · internal vs external · people/process/technology · before/during/after · a formula (revenue = clients × price × usage).</li>
+          <li><strong>The formula trick is the strongest:</strong> decompose a metric into its arithmetic parts and the carve is MECE by construction. Growth = new logos + expansion - churn. Done.</li>
+          <li><strong>MECE is for analysis, not communication:</strong> you carve MECE in private, then present only the branches that matter (that's 80/20, Part 4).</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The double-count that burned a real board:</strong> a leadership team listed "churn", "product gaps", and "onboarding issues" as three separate problems and funded three separate fixes - but two of them were the same clients counted twice. A MECE carve by revenue line would have caught it in five minutes and saved a quarter of duplicated effort.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>5W2H: the completeness checklist<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>When you cannot find a clean carve, brute-force exhaustiveness with 5W2H - What, Why, Where, When, Who, How, How much. It comes from Toyota's factory floor and works anywhere: run the seven questions over a problem and the gaps announce themselves.</p>
+        <table class="clean">
+          <thead><tr><th>Question</th><th>On Nexa's stall</th></tr></thead>
+          <tbody>
+            <tr><td>What exactly stalled?</td><td>ARR growth rate: 45% → 12% in 3 years</td></tr>
+            <tr><td>When did it start?</td><td>NRR began sliding 6 quarters ago</td></tr>
+            <tr><td>Where (segment)?</td><td>Concentrated in single-module clients</td></tr>
+            <tr><td>Who is affected?</td><td>1,200 business clients; 8M end consumers untouched</td></tr>
+            <tr><td>How much?</td><td>98% NRR vs 118% two years ago ≈ $8M/yr swing</td></tr>
+          </tbody>
+        </table>
+        <p>Notice what happened: three questions in, "growth is stalling" became "single-module clients started churning six quarters ago". That is already half a diagnosis.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: ISSUE TREES ============ -->
+  <section class="section" id="issue-trees">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · from carve to map</span>
+      <h2>Issue trees: the question, exploded <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Stack MECE carves two or three layers deep and you get an issue tree - the complete map of where an answer could possibly live. It is how strategists guarantee they looked everywhere before claiming they found the cause.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexa issue tree: growth stall splits into new revenue and existing revenue, each splitting again into testable branches">
+        <style>
+          .itT { font: 700 13.5px Inter, sans-serif; fill: #FFFFFF; }
+          .itS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .88; }
+          .itX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .itL { stroke: #C3CEC7; stroke-width: 2; fill: none; }
+          .itHot { font: 600 12px Inter, sans-serif; fill: #C9930A; }
+        </style>
+        <rect x="30" y="125" width="190" height="60" rx="12" fill="#123A29"/>
+        <text class="itT" x="46" y="151">Why has Nexa's</text>
+        <text class="itT" x="46" y="169">growth stalled?</text>
+        <line class="itL" x1="220" y1="155" x2="280" y2="80"/>
+        <line class="itL" x1="220" y1="155" x2="280" y2="230"/>
+        <rect x="283" y="52" width="180" height="52" rx="10" fill="#1E6B4A"/>
+        <text class="itT" x="298" y="74">New revenue down</text>
+        <text class="itS" x="298" y="92">fewer logos won</text>
+        <rect x="283" y="204" width="180" height="52" rx="10" fill="#1E6B4A"/>
+        <text class="itT" x="298" y="226">Existing rev leaking</text>
+        <text class="itS" x="298" y="244">NRR 118% → 98%</text>
+        <line class="itL" x1="463" y1="78" x2="520" y2="40"/>
+        <line class="itL" x1="463" y1="78" x2="520" y2="105"/>
+        <line class="itL" x1="463" y1="230" x2="520" y2="185"/>
+        <line class="itL" x1="463" y1="230" x2="520" y2="262"/>
+        <rect x="523" y="16" width="200" height="46" rx="10" fill="#2E8B62"/>
+        <text class="itT" x="537" y="35">Fewer at-bats?</text>
+        <text class="itS" x="537" y="52">pipeline volume, channels</text>
+        <rect x="523" y="84" width="200" height="46" rx="10" fill="#2E8B62"/>
+        <text class="itT" x="537" y="103">Losing more often?</text>
+        <text class="itS" x="537" y="120">win rate 31% → 22% ⚠</text>
+        <rect x="523" y="162" width="200" height="46" rx="10" fill="#2E8B62"/>
+        <text class="itT" x="537" y="181">Churn up?</text>
+        <text class="itS" x="537" y="198">14%/yr, single-module ⚠</text>
+        <rect x="523" y="240" width="200" height="46" rx="10" fill="#2E8B62"/>
+        <text class="itT" x="537" y="259">Expansion down?</text>
+        <text class="itS" x="537" y="276">fewer module upgrades</text>
+        <text class="itHot" x="740" y="110">⚠ = where the data</text>
+        <text class="itHot" x="740" y="128">points; Session 3</text>
+        <text class="itHot" x="740" y="146">digs the root cause</text>
+        <text class="itX" x="30" y="318">Each layer is a MECE carve of its parent. Leaves must be testable with data - "morale is low" is not a leaf, "win rate fell" is.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - Nexa's growth stall as an issue tree (you build this in the apply-along)</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Growing a tree that actually works<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Start with the question, not the answer.</strong> The root is always a question ("why has X stalled?" / "how might we double Y?"). Diagnosis trees ask why; solution trees ask how.</li>
+          <li><strong>Each split is MECE.</strong> The formula trick shines here: revenue math gives you layer one for free.</li>
+          <li><strong>Stop at testable leaves.</strong> A leaf earns its place when you can name the data that would confirm or kill it. Then you prioritize which leaves to test first - that is hypothesis-driven work (self-study below).</li>
+          <li><strong>Two or three layers is plenty.</strong> Five-layer trees are procrastination wearing a suit.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          When a debate goes circular, walk to the whiteboard and draw the root question with two MECE branches. Watching a room reorganize its thinking around a tree is the cheapest authority you will ever buy.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Hypothesis-driven problem solving: test, don't boil<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>An issue tree maps everywhere the answer COULD be; hypothesis-driven work is choosing where to look FIRST. Instead of analyzing every branch (boiling the ocean), you bet: "I believe the stall is mostly existing-revenue leakage, and I can check NRR by cohort by Friday."</p>
+        <ul>
+          <li><strong>Form the hypothesis</strong> from the strongest early signal (Nexa: churn concentrated in single-module clients).</li>
+          <li><strong>Define the kill test:</strong> what data would prove you wrong? If you cannot name it, it is a belief, not a hypothesis.</li>
+          <li><strong>Timebox it.</strong> One week per hypothesis round. Wrong fast beats right slow - the tree holds your other options warm.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>McKinsey teams call this "day-one answer": on day one of a study, they commit a best-guess answer and spend the project trying to break it. It feels arrogant; it is actually humility with a deadline - every analysis has to earn its place by testing the answer.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>First-principles thinking: when the tree needs new roots<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Issue trees decompose the problem as framed. First-principles thinking questions the frame itself: strip the situation to physical facts and rebuild. Nexa framed as "how do we stop churn?" assumes clients should stay; first principles asks "what would make a business PAY for a consumer platform in 2026, from scratch?" - which is where the AI-native competitors started, and why they onboard in days.</p>
+        <ul>
+          <li><strong>Use sparingly:</strong> re-deriving everything from atoms is slow. Reach for it when incumbents (including you) all share an assumption a newcomer could ignore.</li>
+          <li><strong>The pairing:</strong> first principles to choose the right question, issue tree to explore it, hypotheses to test it. Session 4 returns to this when we read Nexa's competitors.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: PYRAMID PRINCIPLE ============ -->
+  <section class="section" id="pyramid">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · thinking → telling</span>
+      <h2>The Pyramid Principle: answer first <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">You carved, you mapped, you found something. Now you have four minutes of the chairman's attention. Barbara Minto's Pyramid Principle is the single highest-leverage communication idea ever taught to consultants: lead with the answer, support with grouped reasons, keep the data underneath.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pyramid Principle: answer on top, three grouped arguments below, data at the base - read top-down, built bottom-up">
+        <style>
+          .pyT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .pyS { font: 400 12px Inter, sans-serif; fill: #FFFFFF; opacity: .9; }
+          .pyX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .pyI { font: 600 13px Inter, sans-serif; fill: #1C221F; }
+          .pyA { stroke: #C3CEC7; stroke-width: 2; fill: none; marker-end: url(#pyAh); }
+        </style>
+        <defs>
+          <marker id="pyAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" fill="none" stroke="#C3CEC7" stroke-width="1.5"/>
+          </marker>
+        </defs>
+        <rect x="255" y="20" width="370" height="44" rx="10" fill="#123A29"/>
+        <text class="pyT" x="273" y="41">THE ANSWER: "The stall is an activation</text>
+        <text class="pyT" x="273" y="57">problem, not a market problem."</text>
+        <rect x="60" y="100" width="230" height="44" rx="10" fill="#1E6B4A"/>
+        <text class="pyT" x="76" y="119">Churn sits in single-</text>
+        <text class="pyS" x="76" y="136">module clients only</text>
+        <rect x="325" y="100" width="230" height="44" rx="10" fill="#1E6B4A"/>
+        <text class="pyT" x="341" y="119">Multi-module NRR is</text>
+        <text class="pyS" x="341" y="136">still 112% - healthy</text>
+        <rect x="590" y="100" width="230" height="44" rx="10" fill="#1E6B4A"/>
+        <text class="pyT" x="606" y="119">Win rate holds where</text>
+        <text class="pyS" x="606" y="136">we demo 2+ modules</text>
+        <rect x="60" y="168" width="230" height="34" rx="8" fill="#EAF4EE"/>
+        <text class="pyI" x="76" y="189">cohort tables, churn logs</text>
+        <rect x="325" y="168" width="230" height="34" rx="8" fill="#EAF4EE"/>
+        <text class="pyI" x="341" y="189">NRR by module count</text>
+        <rect x="590" y="168" width="230" height="34" rx="8" fill="#EAF4EE"/>
+        <text class="pyI" x="606" y="189">win/loss interview notes</text>
+        <line class="pyA" x1="175" y1="98" x2="330" y2="66"/>
+        <line class="pyA" x1="440" y1="98" x2="440" y2="66"/>
+        <line class="pyA" x1="705" y1="98" x2="550" y2="66"/>
+        <text class="pyX" x="60" y="235">Read TOP-DOWN in the room (answer → reasons → data on request). Built BOTTOM-UP at your desk (data → groups → so-what).</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the pyramid: how Session 8's board narrative will be shaped</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Answer → reasons → data<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Lead with the answer.</strong> Not background, not method, not suspense. Executives listen top-down; every minute before the answer is a minute they spend guessing it.</li>
+          <li><strong>Group reasons in threes-ish,</strong> and make each group MECE-clean. Under each reason: the data, shown only if asked. The pyramid is your issue tree, inverted and pruned.</li>
+          <li><strong>The situation-complication-question opener:</strong> one sentence of agreed context ("we grew 45%, now 12%"), one twist ("the board meets in 6 weeks"), then the question your answer resolves. Thirty seconds, then the pyramid.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The email test:</strong> Minto's rule survives because of moments like this - a VP sent a 14-paragraph analysis; the CEO read two lines and replied "so what do you want?". The rewrite led with "I recommend we pause the enterprise push; three reasons below." Approved in 11 minutes. Same analysis, different architecture.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 4: 80/20 ============ -->
+  <section class="section" id="pareto">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · the ruthless filter</span>
+      <h2>80/20: where the leverage lives <span class="tag concept">3 min live</span></h2>
+    </div>
+    <p class="lede">Pareto's observation - most effects come from few causes - is the strategist's permission slip to ignore things. Your issue tree has eight leaves; the data will point hard at two. 80/20 says: test those two first and say so out loud.</p>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Pareto as a scoping weapon<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>On problems:</strong> Nexa's churn is 14% overall, but single-module clients churn at 3× the rate of multi-module ones. One segment, most of the leak. That is where Session 3's investigation goes.</li>
+          <li><strong>On effort:</strong> before any analysis, ask "which 20% of this work produces 80% of the decision?" A cohort table you can pull today usually beats a perfect model you get next month.</li>
+          <li><strong>On portfolios:</strong> expect revenue, bugs, complaints, and feature usage to be Pareto-shaped. If your top 5 clients are NOT 40%+ of revenue, that is itself a finding.</li>
+          <li><strong>The honest caveat:</strong> 80/20 prioritizes, it does not conclude. You still verify the tail is not hiding a landmine (Session 2's pre-mortem catches those).</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Pair it with the tree</strong>
+          MECE guarantees you looked everywhere; 80/20 licenses you to only DIG where it matters. Rigor in the map, ruthlessness in the route.
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 1 of 3</span>
+      <h2>Carve Nexa's stall, MECE <span class="tag demo">★ 7 min · everyone carves</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>The brief, read aloud: Nexa, $40M ARR B2B2C platform, growth 45% → 12%, NRR 98% and falling, churn 14% concentrated in single-module clients, win rate 31% → 22%, two AI-native competitors priced 40% lower.</p></div>
+      <div class="step"><p>Two minutes solo: carve "why has growth stalled?" into a first MECE layer. Hint if stuck: what is the revenue formula?</p></div>
+      <div class="step"><p>Compare with a neighbor: run the two tests on each other's carve - can one fact land in both buckets? Can you name a fact that lands in neither?</p></div>
+      <div class="step"><p>Converge on the room's layer one: <strong>new revenue down vs existing revenue leaking</strong>. Notice several different carves passed the test - MECE is a bar, not a single right answer.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 2 of 3</span>
+      <h2>Grow the issue tree <span class="tag demo">★ 9 min · everyone maps</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Split each layer-one branch once more: new revenue → fewer at-bats vs losing more often; existing revenue → churn up vs expansion down. Check each split is MECE.</p></div>
+      <div class="step"><p>For every leaf, write the data that would test it (pipeline count, win rate by segment, churn by cohort, upgrades per client per year). A leaf with no testable data gets rewritten.</p></div>
+      <div class="step"><p>80/20 pass: circle the two leaves the brief's numbers already point at (win rate collapse; single-module churn). Say the sentence out loud: <strong>"We will test these two first, and we know what we are NOT testing yet."</strong></p></div>
+      <div class="step"><p>Photograph your tree. It is Session 3's starting point - the investigation session digs the circled leaves to root cause.</p></div>
+    </div>
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p>The sentence in step 3 is the whole game. "Here is everywhere the answer could be, here is where we are looking first, here is what we are consciously deferring" - said to a chairman, that sentence buys more trust than any deck. It sounds like control, because it is.</p>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 3 ============ -->
+  <section class="section" id="demo-3">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 3 of 3</span>
+      <h2>Pyramid it in three sentences <span class="tag demo">★ 6 min · everyone writes</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Pretend the circled leaves confirmed (they will - Session 3). Write ONE answer sentence for Nexa's board: your best "the stall is X, not Y" formulation.</p></div>
+      <div class="step"><p>Under it, three reason bullets - each one a branch of your tree, each backed by a number from the brief.</p></div>
+      <div class="step"><p>Read a volunteer's aloud. Room checks: did the answer come first? Could the chairman stop listening after sentence one and still know what you think?</p></div>
+    </div>
+    <div class="callout tip">
+      <strong>Keep this artifact</strong>
+      This three-sentence pyramid is the seed of Session 8's full board narrative. Every session between now and then upgrades one part of it.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">After the session</span>
+      <h2>This week <span class="tag exercise">◐ 30 min total</span></h2>
+    </div>
+    <ul>
+      <li><strong>Pick one real problem from YOUR desk</strong> and build its issue tree - root question, two MECE layers, testable leaves, two circles. Ten minutes, pen and paper.</li>
+      <li><strong>Rewrite one email pyramid-style:</strong> take something you sent this month that buried the ask, and rebuild it answer-first. Compare lengths.</li>
+      <li><strong>Read the self-study cards</strong> above: 5W2H, hypothesis-driven problem solving, first principles - each pairs with a live tool.</li>
+      <li><strong>Optional deep end:</strong> Barbara Minto's <em>The Pyramid Principle</em> chapters 1-3, or Conn &amp; McLean's <em>Bulletproof Problem Solving</em> chapter 1 (the seven-step loop this whole course walks).</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · A carve of churn causes reads: "product gaps, onboarding issues, unhappy clients". What is wrong with it?</p>
+      <button class="qopt" type="button">A · Nothing - three causes, nicely varied</button>
+      <button class="qopt" type="button">B · Too short - a good carve needs five buckets minimum</button>
+      <button class="qopt" type="button">C · Not MECE - the buckets overlap (unhappy WHY?) and gaps remain (pricing? competitor pull?)</button>
+      <p class="qwhy">"Unhappy clients" contains the other two, and nothing covers pricing or competitors. Run both tests: overlap check, gap check.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · What earns a branch the right to be a LEAF on an issue tree?</p>
+      <button class="qopt" type="button">A · You can name the data that would confirm or kill it</button>
+      <button class="qopt" type="button">B · It is specific enough to assign to one department</button>
+      <button class="qopt" type="button">C · It has been split at least three times</button>
+      <p class="qwhy">Testability is the bar. "Win rate fell" points at data; "morale is low" points at a feeling. Depth is whatever gets you to testable - usually 2-3 layers.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · Four minutes with the chairman. The Pyramid Principle says you open with...</p>
+      <button class="qopt" type="button">A · The background, so the answer lands in context</button>
+      <button class="qopt" type="button">B · The answer, then grouped reasons, data held underneath for questions</button>
+      <button class="qopt" type="button">C · The methodology, so the answer is credible</button>
+      <p class="qwhy">Answer first, always. One sentence of situation-complication is allowed as a runway - then the answer. Executives listen top-down.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Frameworks covered &amp; their origins</h2>
+    </div>
+    <p class="lede">This course teaches the working 80% of each framework and cites the canon - the original books and papers stay the deep end for anyone who wants it.</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">MECE (Minto / McKinsey)</span><span class="note">both tests, cheap carves, the formula trick - Part 1 + Apply-along 1</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Issue trees (McKinsey tradition)</span><span class="note">why vs how trees, testable leaves - Part 2 + Apply-along 2</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Pyramid Principle (Barbara Minto, 1985)</span><span class="note">answer-first, SCQ opener, grouping - Part 3 + Apply-along 3</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">80/20 (Pareto / Richard Koch)</span><span class="note">as a scoping weapon, with the honest caveat - Part 4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">5W2H (Toyota)</span><span class="note">self-study card, Part 1</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Hypothesis-driven problem solving (Conn &amp; McLean)</span><span class="note">self-study card, Part 2 - returns live in Session 3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">First-principles thinking</span><span class="note">self-study card, Part 2 - returns in Session 4's competitor read</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>MECE</b><span>No overlaps, no gaps. Two tests: can a fact land in two buckets? In none? Formula carves are MECE for free.</span></div>
+      <div class="cheat-item"><b>Issue tree</b><span>Root question → MECE splits → testable leaves. Why-trees diagnose; how-trees solve. 2-3 layers, then stop.</span></div>
+      <div class="cheat-item"><b>Pyramid</b><span>Answer → grouped reasons → data underneath. SCQ opener (situation, complication, question), 30 seconds max.</span></div>
+      <div class="cheat-item"><b>80/20</b><span>Map everything, dig where the data points. Say what you are deferring out loud - that sentence builds trust.</span></div>
+      <div class="cheat-item"><b>The combo</b><span>MECE carves the map · tree explores it · hypothesis picks the route · pyramid reports it back.</span></div>
+      <div class="cheat-item"><b>Nexa so far</b><span>Stall = win-rate collapse + single-module churn. Two circled leaves; Session 3 digs the roots.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Session 1 of 8 · learn-strategic-thinking-with-phoebe · by Phoebe Fu</span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="02-decide-with-confidence.html">Next: Decide with confidence →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 7 · Grow the customer - learn strategic thinking with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-strategic-thinking-with-phoebe</a> / Session 7 of 8</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Strategic Thinking with Phoebe · Session 7 of 8</div>
+    <h1>Grow the customer: <span class="accent">lifecycles, funnels, and the math</span></h1>
+    <p class="sub">Session 6's growth plan says H1 = fix the leak. Today we find every leak with the customer lifecycle, price them with LTV/CAC, and exploit the B2B2C twist: Nexa has TWO lifecycles - business clients and 8M end consumers - and the second one is an untapped growth engine.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Advanced</span>
+      <span class="chip audience">Managers &amp; execs</span>
+      <span class="chip audience">Calculator handy</span>
+      <span class="chip time">45 min live + self-study</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Where we are</span>
+      <span class="a2" style="flex:3">3-20 · Concepts</span>
+      <span class="a3" style="flex:5">20-42 · Apply-along</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>From portfolio to plumbing</h2>
+    </div>
+    <p class="lede">Session 6 decided WHERE growth comes from: fix the leak first. This session is the plumbing inspection. The customer lifecycle finds every place revenue leaks out, AARRR turns each stage into one instrumented metric, and LTV/CAC prices the fix in dollars a chairman can compare against anything else on the budget. By the end, "fix activation" stops being a plea from customer success and becomes a number.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill amber">★ Apply-along on Nexa</span>
+      <span class="pill inkpill">The case: Nexa, B2B2C SaaS</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      Both of Nexa's lifecycles drawn with the leak stages marked, an AARRR sheet with one metric per level and a named kill metric, and the LTV arithmetic that prices moving one client from single- to multi-module at roughly $150k - the money case for the whole activation playbook.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: CUSTOMER LIFECYCLE ============ -->
+  <section class="section" id="lifecycle">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · the anchor</span>
+      <h2>The customer lifecycle: where revenue actually leaks <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Every customer walks one road: acquire → onboard → adopt → retain → expand → advocate. Revenue leaks at specific stage transitions, not "somewhere in churn." Read Nexa's health per stage and the story changes: the leak everyone calls churn actually happens two stages earlier.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Nexa customer lifecycle pipeline with health per stage, the real leak marked at onboard to adopt, and the second consumer lifecycle below">
+        <style>
+          .clT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .clS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .88; }
+          .clH { font: 700 15px Inter, sans-serif; fill: #1C221F; }
+          .clI { font: 600 12px Inter, sans-serif; fill: #1C221F; }
+          .clW { font: 700 13px Inter, sans-serif; fill: #C9930A; }
+          .clX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .clA { stroke: #C3CEC7; stroke-width: 2; fill: none; marker-end: url(#clAh); }
+        </style>
+        <defs>
+          <marker id="clAh" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#C3CEC7" stroke-width="1.5"/></marker>
+        </defs>
+        <text class="clH" x="30" y="38">Business-client lifecycle · Nexa health per stage</text>
+        <rect x="30" y="60" width="118" height="60" rx="10" fill="#1E6B4A"/><text class="clT" x="44" y="85">Acquire</text><text class="clS" x="44" y="104">win 22%</text>
+        <rect x="170" y="60" width="118" height="60" rx="10" fill="#123A29"/><text class="clT" x="184" y="85">Onboard</text><text class="clS" x="184" y="104">weeks</text>
+        <rect x="310" y="60" width="118" height="60" rx="10" fill="#123A29"/><text class="clT" x="324" y="85">Adopt</text><text class="clS" x="324" y="104">1-module</text>
+        <rect x="450" y="60" width="118" height="60" rx="10" fill="#1E6B4A"/><text class="clT" x="464" y="85">Retain</text><text class="clS" x="464" y="104">churn 14%</text>
+        <rect x="590" y="60" width="118" height="60" rx="10" fill="#1E6B4A"/><text class="clT" x="604" y="85">Expand</text><text class="clS" x="604" y="104">NRR 98%</text>
+        <rect x="730" y="60" width="118" height="60" rx="10" fill="#2E8B62"/><text class="clT" x="744" y="85">Advocate</text><text class="clS" x="744" y="104">unmeasured</text>
+        <line class="clA" x1="150" y1="90" x2="167" y2="90"/><line class="clA" x1="290" y1="90" x2="307" y2="90"/><line class="clA" x1="430" y1="90" x2="447" y2="90"/>
+        <line class="clA" x1="570" y1="90" x2="587" y2="90"/><line class="clA" x1="710" y1="90" x2="727" y2="90"/>
+        <text class="clW" x="80" y="142">⚠</text><text class="clW" x="220" y="142">⚠⚠ partner gap</text><text class="clW" x="360" y="142">⚠⚠ stall</text>
+        <path d="M170 152 L170 162 L428 162 L428 152" stroke="#C9930A" stroke-width="2.5" fill="none"/>
+        <text class="clW" x="170" y="184">the real leak lives here - two stages before anyone calls it churn</text>
+        <text class="clI" x="30" y="218">The second lifecycle · 8M end consumers, acquired FOR clients, never nurtured</text>
+        <rect x="170" y="230" width="118" height="42" rx="10" fill="#EAF4EE"/><text class="clI" x="184" y="256">Discover</text>
+        <rect x="310" y="230" width="118" height="42" rx="10" fill="#EAF4EE"/><text class="clI" x="324" y="256">Use</text>
+        <rect x="450" y="230" width="118" height="42" rx="10" fill="#EAF4EE"/><text class="clI" x="464" y="256">Return</text>
+        <rect x="590" y="230" width="118" height="42" rx="10" fill="#EAF4EE"/><text class="clI" x="604" y="256">Advocate</text>
+        <line class="clA" x1="290" y1="251" x2="307" y2="251"/><line class="clA" x1="430" y1="251" x2="447" y2="251"/><line class="clA" x1="570" y1="251" x2="587" y2="251"/>
+        <text class="clX" x="30" y="294">Consumer retention drives client retention: clients whose consumers keep coming back do not churn. The second lifecycle is the moat.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - both lifecycles: the client leak is at onboard → adopt, and the consumer road is not even instrumented</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Stage transitions are metrics, not vibes<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A lifecycle is only as good as its transition definitions. Every stage needs an entry/exit criterion sharp enough to count clients against - otherwise "adoption" becomes a feeling that CS and product argue about.</p>
+        <ul>
+          <li><strong>Acquire → onboard:</strong> contract signed. Easy. Health today: win rate 22%, down from 31%.</li>
+          <li><strong>Onboard → adopt:</strong> Nexa's definition from Session 5's canvas: <strong>second module activated within 30 days</strong>. This is THE transition - single-module clients stuck here are tomorrow's churn number, and Session 3 traced exactly why (partner-reseller onboarding gap, no activation playbook).</li>
+          <li><strong>Adopt → retain → expand:</strong> renewal is the retain gate (churn 14%); an additional paid module or seat growth is the expand gate (NRR 98% means expansion no longer covers churn).</li>
+          <li><strong>Advocate:</strong> referral or reference given - and Nexa does not measure it at all. An unmeasured stage is a free growth lever nobody has pulled.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          Ask any team "what is our definition of an activated customer?" If two departments give two answers, you have found this quarter's most profitable meeting.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The B2B2C twist: draw the SECOND lifecycle<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Nexa's 8M end consumers walk their own road: discover → use → return → advocate. They are acquired FOR clients - and then never nurtured, never measured, never spoken to. That is the strategic blind spot and the opportunity in one.</p>
+        <ul>
+          <li><strong>The dependency:</strong> consumer retention drives client retention. A business whose customers keep coming back through Nexa does not churn - the platform is earning its renewal every day at the consumer layer.</li>
+          <li><strong>The instrumentation gap:</strong> Nexa can tell you a client's module count instantly and cannot tell you whether that client's consumers returned last month. The metric that predicts churn best is the one not on any dashboard.</li>
+          <li><strong>The H3 link:</strong> Session 6's consumer-side option and flywheel both spin on this second lifecycle. You cannot monetize a road you have not mapped.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The two-lifecycle save:</strong> a booking platform noticed that merchant churn was predicted almost perfectly by end-customer repeat rates three months earlier. They stopped saving merchants at renewal time (too late) and started boosting the merchants' own customer return rates instead - churn calls turned into growth calls, and the save rate tripled.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Customer journey mapping: the qualitative twin<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The lifecycle counts people at each stage; a journey map walks one person through the same spine and records what they touch and how they feel. Service-design practice, and the perfect diagnostic partner to the numbers.</p>
+        <ul>
+          <li><strong>Same spine, different lens:</strong> for each stage, list touchpoints (emails, portal, partner reseller, support), the customer's goal, and the emotional temperature. Frustration clusters ARE the leak, seen from inside.</li>
+          <li><strong>Nexa's onboard stage mapped:</strong> a client signed by a partner reseller meets a handoff email, a generic setup guide, and silence - no playbook, no second-module nudge. The map shows WHY the 30-day activation transition fails; the lifecycle shows HOW MUCH it costs.</li>
+          <li><strong>Do it cheap:</strong> one whiteboard, one real recent customer, sticky notes per touchpoint. Two hours. Resist the urge to buy software for this.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: AARRR ============ -->
+  <section class="section" id="aarrr">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · the instrument panel</span>
+      <h2>AARRR: pirate metrics on the lifecycle <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Dave McClure's 2007 pirate metrics - Acquisition, Activation, Retention, Referral, Revenue - are the startup-metrics dialect of the same spine you just drew. Five levels, one number each, reviewed weekly. The funnel view makes leak-priority arguments impossible to dodge.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AARRR funnel with Nexa's number per level, mapped to the lifecycle stages, activation highlighted as the kill metric">
+        <style>
+          .aaT { font: 700 13px Inter, sans-serif; fill: #FFFFFF; }
+          .aaI { font: 700 13px Inter, sans-serif; fill: #1C221F; }
+          .aaM { font: 600 12.5px Inter, sans-serif; fill: #67736C; }
+          .aaW { font: 700 12.5px Inter, sans-serif; fill: #C9930A; }
+          .aaX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .aaL { stroke: #C3CEC7; stroke-width: 2; }
+        </style>
+        <rect x="30" y="30" width="440" height="44" rx="8" fill="#123A29"/><text class="aaT" x="48" y="57">Acquisition · pipeline in, win rate 22%</text>
+        <rect x="65" y="82" width="370" height="44" rx="8" fill="#1E6B4A" stroke="#C9930A" stroke-width="3"/><text class="aaT" x="83" y="109">Activation · 2nd module in 30 days</text>
+        <rect x="100" y="134" width="300" height="44" rx="8" fill="#2E8B62"/><text class="aaT" x="118" y="161">Retention · churn 14%/yr</text>
+        <rect x="135" y="186" width="230" height="44" rx="8" fill="#9BD4B6"/><text class="aaI" x="153" y="213">Referral · unmeasured</text>
+        <rect x="170" y="238" width="160" height="44" rx="8" fill="#EAF4EE"/><text class="aaI" x="188" y="265">Revenue · NRR 98%</text>
+        <text class="aaW" x="447" y="109">◀ the kill metric</text>
+        <line class="aaL" x1="500" y1="52" x2="580" y2="52"/><line class="aaL" x1="500" y1="104" x2="580" y2="104"/><line class="aaL" x1="440" y1="156" x2="580" y2="156"/>
+        <line class="aaL" x1="405" y1="208" x2="580" y2="208"/><line class="aaL" x1="370" y1="260" x2="580" y2="260"/>
+        <text class="aaM" x="590" y="56">maps to Acquire</text><text class="aaM" x="590" y="108">maps to Onboard + Adopt</text><text class="aaM" x="590" y="160">maps to Retain</text>
+        <text class="aaM" x="590" y="212">maps to Advocate</text><text class="aaM" x="590" y="264">maps to Expand</text>
+        <text class="aaX" x="30" y="308">One metric per level, instrumented, reviewed weekly. Fix the biggest leak CLOSEST to revenue - for Nexa that is activation, not acquisition.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - AARRR is the lifecycle's instrument panel: five levels, five numbers, one kill metric</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>One metric per level - the whole discipline<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>Pick ONE metric per level,</strong> the one that moves the business, and instrument it properly. Ten metrics per level is a dashboard; one is a decision. Nexa's picks: win rate, 30-day second-module activation, logo churn, referrals given, NRR.</li>
+          <li><strong>Weekly review, same numbers, same order.</strong> The power is longitudinal - the third week you look at the same five numbers, trends start talking.</li>
+          <li><strong>Levels are conversion gates:</strong> the question at each boundary is "what fraction makes it through, and what would move that fraction 5 points?" That phrasing turns metric review into action review.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The forty-metric funeral:</strong> a SaaS leadership team reviewed a 40-tile dashboard monthly and agreed it was all "directionally concerning." When a new COO cut it to five AARRR numbers on one page, the second meeting produced the first funded fix in a year - activation, obviously. Nobody defends tile 27 of 40; everybody defends level 2 of 5.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Where to work first: the leak closest to revenue<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Two leaks show on Nexa's funnel: acquisition (win rate 22%) and activation (single-module stall). The rule: fix the biggest leak CLOSEST to revenue first.</p>
+        <ul>
+          <li><strong>Downstream fixes compound upstream:</strong> every client saved at activation multiplies the value of every future win. Fix acquisition first and you pour more leads into a funnel that still leaks them out at month six.</li>
+          <li><strong>The classic error has a name:</strong> "we need more pipeline." More acquisition into a leaky funnel is buying water for a bucket with a hole - the most expensive possible way to stay the same size.</li>
+          <li><strong>It also sequences the org:</strong> activation is CS + product work (playbook, starter tier, partner enablement); acquisition is sales + marketing spend. Nexa's Session 2 verdict - activation fix first - lands in the same place from a third direction.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          When someone asks for more top-of-funnel budget, ask for the funnel first. "Show me conversion per level, then tell me again where the money goes." Half the time the request changes in the room.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Growth loops vs funnels: what compounds<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Brian Balfour and the Reforge school push past the funnel: funnels CONSUME inputs (every lead is bought or earned once), loops COMPOUND (the output of one cycle becomes the input of the next). Mature growth strategies run both and know which is which.</p>
+        <ul>
+          <li><strong>Nexa's candidate loop:</strong> consumer data improves platform recommendations → better client results → stronger case studies and referrals → more clients → more consumers → more data. Session 6's flywheel, now with metrics attached at each link.</li>
+          <li><strong>The test:</strong> ask of any growth motion, "if we stopped feeding it, would it keep turning?" Paid acquisition stops dead - funnel. Referrals from delighted advocates keep arriving - loop.</li>
+          <li><strong>Where AARRR fits:</strong> Referral is the funnel level that hints a loop is possible. Nexa's "unmeasured" there means the loop is not even being watched, let alone engineered.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: LTV / CAC ============ -->
+  <section class="section" id="ltv">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the money math</span>
+      <h2>LTV / CAC: pricing the fix <span class="tag concept">5 min live</span></h2>
+    </div>
+    <p class="lede">Everything so far says "fix activation." This part says what that is worth, in arithmetic simple enough to do on a napkin and solid enough to defend to a board. Calculators out.</p>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The napkin: from $33k to the $150k prize<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Lifetime value = yearly contribution × average lifetime, and average lifetime is just 1 / churn rate. Walk Nexa's numbers:</p>
+        <table class="clean">
+          <thead><tr><th>Line</th><th>Blended</th><th>Single-module</th><th>Multi-module</th></tr></thead>
+          <tbody>
+            <tr><td>Median revenue / yr</td><td>$33k</td><td>$33k</td><td>$33k+</td></tr>
+            <tr><td>Contribution (~75% gross margin)</td><td>~$24.8k</td><td>~$24.8k</td><td>~$24.8k+</td></tr>
+            <tr><td>Churn rate</td><td>14%/yr</td><td>~3x faster</td><td>well under blended</td></tr>
+            <tr><td>Avg lifetime (1 / churn)</td><td>~7.1 yrs</td><td>~2.5 yrs</td><td>~8.5 yrs</td></tr>
+            <tr><td><strong>LTV (contribution × lifetime)</strong></td><td><strong>≈ $176k</strong></td><td><strong>≈ $62k</strong></td><td><strong>≈ $210k+</strong></td></tr>
+          </tbody>
+        </table>
+        <p>So moving ONE client from single- to multi-module is worth roughly <strong>$150k of lifetime value</strong>. That single line prices the activation playbook: if it costs $500k to build and converts just four clients, it has paid for itself - and Session 3 found hundreds stuck at single-module.</p>
+        <div class="callout tip">
+          <strong>The exec move</strong>
+          Memorize your company's version of this napkin. The leader who can price a retention fix in LTV terms, from memory, wins every budget argument against "more pipeline."
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>CAC payback and the 3:1 rule - useful, gameable<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>CAC payback = CAC / monthly contribution:</strong> how many months until a new client has covered their own acquisition cost. Under 12 months is comfortable for SaaS; past 24, growth eats cash.</li>
+          <li><strong>The 3:1 rule of thumb:</strong> LTV should be at least 3× CAC. Below it you are buying customers at a loss; far above it (8:1+) you are probably under-investing in growth.</li>
+          <li><strong>Its abuse:</strong> it is a ratio, not a strategy. Denominators get gamed - exclude sales salaries from CAC, assume yesterday's churn forever in LTV, blend cohorts until the sick one disappears. Nexa blended is ≈ $176k LTV; the single-module cohort inside it is ≈ $62k. Same company, one healthy-looking average, one cohort quietly bleeding.</li>
+          <li><strong>The honest version:</strong> always compute LTV:CAC per segment or cohort, never blended-only. The blend is where problems hide.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The ratio that lied:</strong> a subscription business proudly reported 3.4:1 LTV:CAC to its investors for two years - blended. Cohort by cohort, every customer acquired through their fastest-growing channel was below 1:1; the legacy base was carrying them. By the time the blend dipped, the bad channel was 60% of spend. The ratio was fine right up until it was fatal.</p>
+        </div>
+      </div>
+    </details>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cohort retention curves over five years: multi-module clients retain far better than single-module, the shaded gap is the prize worth about 150 thousand dollars per client">
+        <style>
+          .cvT { font: 700 13px Inter, sans-serif; fill: #1E6B4A; }
+          .cvW { font: 700 13px Inter, sans-serif; fill: #C9930A; }
+          .cvI { font: 700 13.5px Inter, sans-serif; fill: #1C221F; }
+          .cvX { font: 400 12.5px Inter, sans-serif; fill: #67736C; }
+          .cvAx { stroke: #C3CEC7; stroke-width: 2; }
+        </style>
+        <line class="cvAx" x1="60" y1="210" x2="830" y2="210"/><line class="cvAx" x1="60" y1="210" x2="60" y2="40"/>
+        <polygon points="60,45 212,55 364,63 516,70 668,76 820,81 820,202 668,192 516,175 364,148 212,105 60,45" fill="#9BD4B6" opacity="0.45"/>
+        <path d="M60 45 L212 55 L364 63 L516 70 L668 76 L820 81" stroke="#1E6B4A" stroke-width="4.5" fill="none"/><path d="M60 45 L212 105 L364 148 L516 175 L668 192 L820 202" stroke="#C9930A" stroke-width="4.5" fill="none" stroke-dasharray="9 6"/>
+        <text class="cvI" x="380" y="120">the prize ≈ $150k LTV per client</text>
+        <text class="cvT" x="700" y="70">multi-module</text><text class="cvW" x="695" y="228">single-module</text>
+        <text class="cvX" x="60" y="232">year 0</text><text class="cvX" x="440" y="232">year 2-3</text><text class="cvX" x="790" y="252">year 5</text>
+        <text class="cvX" x="60" y="256">% of cohort retained. Single-module clients churn ~3x faster - the shaded gap is what the activation playbook harvests.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - two cohorts, one prize: the retention gap between single- and multi-module clients, priced</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>STP: segment, target, position the starter tier<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Philip Kotler's STP is marketing's oldest spine: Segment the market into distinct groups, Target the segments worth winning, Position the offer in the target's head. The starter tier from Session 5 needs all three before launch.</p>
+        <ul>
+          <li><strong>Segment:</strong> smaller consumer businesses currently priced out of the ~$33k median - split by vertical, digital maturity, and transaction volume.</li>
+          <li><strong>Target:</strong> the slice with high transaction volume but low software budget - usage pricing fits them structurally, not just cheaply.</li>
+          <li><strong>Position:</strong> "start free of risk, pay as your customers actually use it" - against both the AI-natives' cheap seats and Nexa's own heavyweight image. Positioning against your own flagship is the delicate part.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>RFM: score the consumer side in three letters<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Recency, Frequency, Monetary - direct marketing's ancient workhorse. Score every one of Nexa's 8M consumers on how recently, how often, and how much they transact, and the invisible second lifecycle becomes segmentable overnight.</p>
+        <ul>
+          <li><strong>Why it fits here:</strong> RFM needs only transaction logs - which Nexa's payments module already has. No surveys, no new instrumentation. The cheapest possible first light on the consumer road.</li>
+          <li><strong>The killer application:</strong> aggregate RFM per client. A client whose consumers' recency scores are collapsing is a churn risk months before renewal - the early-warning system Part 1's twist card asked for.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>NPS: one question, handled with care<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Fred Reichheld's Net Promoter Score (Bain, 2003): "how likely are you to recommend us?" - promoters minus detractors. It would give Nexa's unmeasured advocate stage its first number.</p>
+        <ul>
+          <li><strong>Trend, not absolute:</strong> NPS varies wildly by industry and survey mechanics. A score of 30 means little; a slide from 45 to 30 over three quarters means everything.</li>
+          <li><strong>Always pair with "why":</strong> the follow-up free-text question is where the value lives. The score gets attention in the boardroom; the verbatims tell you what to fix.</li>
+          <li><strong>Run it on BOTH lifecycles:</strong> client NPS and consumer NPS will disagree, and the gap between them is a strategy document in itself.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 1 of 3</span>
+      <h2>Draw both lifecycles, mark the leaks <span class="tag demo">★ 8 min · every table maps</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Whiteboard, two horizontal roads: the client lifecycle (acquire → onboard → adopt → retain → expand → advocate) and below it the consumer lifecycle (discover → use → return → advocate).</p></div>
+      <div class="step"><p>Mark the leak stages with the brief's evidence: win rate 22% at acquire, weeks + partner gap at onboard, single-module stall at adopt, churn 14% at retain, NRR 98% at expand, nothing measured at advocate.</p></div>
+      <div class="step"><p>Name the transition metric for each stage boundary - entry/exit criteria sharp enough to count against. Use "2nd module in 30 days" for onboard → adopt; invent defensible ones for the rest.</p></div>
+      <div class="step"><p>Circle where the real leak starts. Say it as a sentence: "the number appears at retain, but the leak begins at onboard → adopt." That reframe is the session's core move.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 2 of 3</span>
+      <h2>AARRR sheet for the starter tier <span class="tag demo">★ 7 min · every table instruments</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>Take Session 5's starter tier - usage-priced, aimed downmarket - and build its AARRR sheet: five levels, ONE metric each. Argue until each level has exactly one.</p></div>
+      <div class="step"><p>Suggested starting points to fight over: Acquisition = qualified signups/week · Activation = first live transaction within 14 days · Retention = month-2 transacting · Referral = invites sent per active client · Revenue = usage fees per client per month.</p></div>
+      <div class="step"><p>Name the kill metric - the one number that, if it fails, kills the experiment. For a usage-priced tier it is activation: no first transaction, no usage revenue, no business. Write the threshold and the deadline next to it.</p></div>
+      <div class="step"><p>Check the discipline: could this sheet be reviewed in five minutes every Monday? If not, cut until it can.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ DEMO 3 ============ -->
+  <section class="section" id="demo-3">
+    <div class="section-kicker">
+      <span class="klabel">Apply-along 3 of 3</span>
+      <h2>Compute the LTV gap - calculators out <span class="tag demo">★ 7 min · everyone computes</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><p>From the brief: $33k median revenue, ~75% gross margin. Compute yearly contribution per client (~$24.8k).</p></div>
+      <div class="step"><p>Single-module cohort: churn ~3x the blended 14% - call it ~40%/yr. Lifetime ≈ 1/0.40 = 2.5 yrs. LTV ≈ $24.8k × 2.5 ≈ $62k.</p></div>
+      <div class="step"><p>Multi-module cohort: lifetime ≈ 8.5 yrs. LTV ≈ $24.8k × 8.5 ≈ $210k+. Gap per converted client ≈ $150k.</p></div>
+      <div class="step"><p>Write the one-sentence money case for the activation playbook: <strong>"Each client we move from single- to multi-module is worth roughly $150k in lifetime value - the playbook pays for itself in single-digit conversions."</strong> That sentence goes in Session 8's board narrative verbatim.</p></div>
+    </div>
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p>Watch what this sentence does to a budget meeting. "Improve onboarding" competes with every other good intention; "each conversion is worth $150k and we have hundreds of candidates" competes with nothing. Same initiative - the arithmetic is the argument.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">After the session</span>
+      <h2>This week <span class="tag exercise">◐ 30 min total</span></h2>
+    </div>
+    <ul>
+      <li><strong>Draw YOUR customer lifecycle</strong> with a transition metric at every stage boundary. Mark the stage you cannot put a number on - that is your unmeasured leak.</li>
+      <li><strong>Compute LTV for your best and worst cohort</strong> using the napkin math: contribution × (1 / churn). If you only have a blended number, that is the finding.</li>
+      <li><strong>Read the growth-loops card</strong> above and name one loop your business could run - then test it: would it keep turning if you stopped feeding it?</li>
+      <li><strong>Optional deep end:</strong> Dave McClure's original "Startup Metrics for Pirates" deck (still free, still sharp) or Reichheld's "The One Number You Need to Grow" (HBR 2003).</li>
+    </ul>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Nexa churns 14% of logos a year. Where does the lifecycle say the leak actually STARTS?</p>
+      <button class="qopt" type="button">A · Retain - churn is a retention problem, so fund saves and renewal discounts</button>
+      <button class="qopt" type="button">B · Acquire - a 22% win rate means the wrong clients are being signed</button>
+      <button class="qopt" type="button">C · Onboard → adopt - clients who never activate a second module decide to leave months before the churn date records it</button>
+      <p class="qwhy">The number shows up at retain, but Session 3's root cause and the cohort data put the leak two stages earlier: no second module in 30 days → no habit → churn. Fixing it at renewal time is fixing it after the decision.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · AARRR shows two leaks: acquisition (win rate 22%) and activation (single-module stall). Which first, and why?</p>
+      <button class="qopt" type="button">A · Activation - it is the biggest leak closest to revenue; more acquisition just pours leads into a funnel that still loses them at month six</button>
+      <button class="qopt" type="button">B · Acquisition - growth needs top-of-funnel volume before anything else matters</button>
+      <button class="qopt" type="button">C · Both simultaneously - split the budget evenly to be safe</button>
+      <p class="qwhy">Fix the biggest leak closest to revenue. Every client saved at activation multiplies the value of every future win; the reverse is buying water for a leaky bucket - the classic error even has a slogan: "we need more pipeline."</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · Nexa's blended LTV:CAC comes out around 3:1. What does that actually tell you?</p>
+      <button class="qopt" type="button">A · The business is healthy - the 3:1 standard is met, so increase spend across the board</button>
+      <button class="qopt" type="button">B · To look deeper - it is a ratio, not a strategy; the blend hides a ≈$62k single-module cohort inside a ≈$176k average, and denominators get gamed</button>
+      <button class="qopt" type="button">C · The business is underperforming - best practice is 10:1</button>
+      <p class="qwhy">3:1 is a rule of thumb and its abuse is legendary: game the CAC denominator, assume yesterday's churn forever, blend cohorts until the sick one vanishes. Always cut LTV:CAC by segment - the blend is where problems hide.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Frameworks covered &amp; their origins</h2>
+    </div>
+    <p class="lede">This course teaches the working 80% of each framework and cites the canon - the original books and papers stay the deep end for anyone who wants it.</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Customer lifecycle (CRM / customer success practice)</span><span class="note">six stages, transition metrics, the B2B2C double lifecycle - Part 1 + Apply-along 1</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">AARRR pirate metrics (Dave McClure, 2007)</span><span class="note">one metric per level, leak-closest-to-revenue rule - Part 2 + Apply-along 2</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">LTV / CAC + cohort thinking (SaaS finance practice)</span><span class="note">the napkin math, CAC payback, 3:1 and its abuse - Part 3 + Apply-along 3</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Growth loops vs funnels (Brian Balfour / Reforge)</span><span class="note">self-study card, Part 2 - funnels consume, loops compound</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">STP segmentation (Philip Kotler)</span><span class="note">self-study card, Part 3 - positioning the starter tier</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">RFM analysis (direct marketing practice)</span><span class="note">self-study card, Part 3 - first light on the 8M consumers</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">NPS (Fred Reichheld, Bain, 2003)</span><span class="note">self-study card, Part 3 - trend not absolute, pair with why</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Customer journey mapping (service design practice)</span><span class="note">self-study card, Part 1 - the qualitative twin of the lifecycle</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 7 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Lifecycle</b><span>Acquire → onboard → adopt → retain → expand → advocate. Every boundary gets a transition METRIC, not a vibe.</span></div>
+      <div class="cheat-item"><b>The reframe</b><span>Churn is where the leak is COUNTED; onboard → adopt is where it HAPPENS. Fix upstream of the number.</span></div>
+      <div class="cheat-item"><b>AARRR</b><span>Five levels, one metric each, reviewed weekly. Fix the biggest leak closest to revenue - activation before acquisition.</span></div>
+      <div class="cheat-item"><b>LTV napkin</b><span>Contribution × (1/churn). Nexa: blended ≈$176k, single-module ≈$62k, multi ≈$210k+. One conversion ≈ $150k.</span></div>
+      <div class="cheat-item"><b>3:1 rule</b><span>LTV ≥ 3× CAC - a ratio, not a strategy. Always cut by cohort; blends hide the bleeding segment.</span></div>
+      <div class="cheat-item"><b>Two lifecycles</b><span>Nexa's 8M consumers walk their own unmeasured road. Consumer retention drives client retention - the real moat.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Session 7 of 8 · learn-strategic-thinking-with-phoebe · by Phoebe Fu</span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="08-the-strategy-stack.html">Next: The strategy stack →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
