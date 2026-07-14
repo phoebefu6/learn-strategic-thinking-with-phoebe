@@ -5,7 +5,7 @@ Companion to `courses/02-decide-with-confidence.html`. The page is the projectio
 ## Preflight
 
 - Room: whiteboard or flip chart per group of 3-4, markers tested. Your main board pre-ruled with an empty 5x4 matrix grid (criteria rows, three bet columns plus weights) - drawing gridlines live burns three minutes.
-- Print the Nexa case brief again (same one-pager as Session 1) PLUS a half-page "three bets" card: Deven/AI copilot, Ilsa/enterprise push, Tom/activation fix, one sentence of the pitch each. The matrix goes faster when the bets are under everyone's hands.
+- Print the Himalaya case brief again (same one-pager as Session 1) PLUS a half-page "three bets" card: Deven/AI copilot, Ilsa/enterprise push, Tom/activation fix, one sentence of the pitch each. The matrix goes faster when the bets are under everyone's hands.
 - Ask attendees beforehand to bring Session 1's photographed issue tree. Have a spare printout of the canonical tree for anyone who lost theirs - the matrix criteria must trace back to it.
 - Open the session page, projector zoom on, all cards collapsed. Check the matrix table renders legibly from the back row.
 - Timer visible for the pre-mortem's 2-minute solo write - the silence must be enforced, and a visible timer does the enforcing for you.
@@ -15,7 +15,7 @@ Companion to `courses/02-decide-with-confidence.html`. The page is the projectio
 | Minute | Beat | Cue |
 |---|---|---|
 | 0-3 | Welcome + the deadlock | Play the three voices: Deven, Ilsa, Tom, one sentence each. Then: "the meeting has run twice and decided nothing. Today we fix the PROCESS, not the people." |
-| 3-8 | Part 1 · Doors | Doors SVG. Ask the door test aloud on both Nexa examples. Land the line: "most decisions are two-way doors treated as one-way." |
+| 3-8 | Part 1 · Doors | Doors SVG. Ask the door test aloud on both Himalaya examples. Land the line: "most decisions are two-way doors treated as one-way." |
 | 8-14 | Part 2 · Matrix | Process SVG first - hammer "weights BEFORE scores." Then the filled table. Tell the rigged-matrix story; watch the room recognize it. |
 | 14-18 | Part 3 · Pre-mortem | The 4-step ritual. Sell step 2's silence as the mechanism, not a formality. Tell the junior-analyst story. |
 | 18-24 | Apply-along 1 · Six doors | 2 min solo, 2 min pairs, 2 min converge. Stir the two designed fights: hiring AEs and sunsetting a module. |
@@ -43,7 +43,7 @@ Companion to `courses/02-decide-with-confidence.html`. The page is the projectio
 Yes - which is exactly why the method puts weights before scores and argues them in public. A rigged matrix requires rigging in front of witnesses. And when someone tries the after-the-fact version - nudging scores until the favorite wins - the sanity-check rule names that move as illegitimate. The matrix does not prevent politics; it makes politics visible, which is usually enough.
 
 **"We are not Amazon. Do doors really matter at our size?"**
-More, not less. Amazon can afford a few slow two-way-door decisions; a company with 30 months of runway cannot. The door test is a speed budget: it tells you where being slow is prudence and where it is just fear with a process attached. Nexa's activation pilot needed a week of deciding, not a quarter.
+More, not less. Amazon can afford a few slow two-way-door decisions; a company with 30 months of runway cannot. The door test is a speed budget: it tells you where being slow is prudence and where it is just fear with a process attached. Himalaya's activation pilot needed a week of deciding, not a quarter.
 
 **"So who actually decides - the matrix or me?"**
 You do. The matrix is the argument, not the verdict - it makes the disagreement specific enough to resolve. If you overrule it, the tool has still worked: it forces you to say WHICH weight you are overruling and why, out loud, on the record. That sentence is the difference between judgment and whim - and boards can tell.

@@ -13,7 +13,7 @@ cheap tier," correct it on the spot.
 - Tables have blank Lean Canvas and VPC sheets (or paper to sketch them).
 - Bring Session 4 outputs into the room: the four TOWS plays and the two moat candidates -
   attendees were told to bring their TOWS plays; have a spare copy visible.
-- Nexa numbers at hand: $33k median client, 14% churn, win rate 22%, multi-module NRR 112%,
+- Himalaya numbers at hand: $33k median client, 14% churn, win rate 22%, multi-module NRR 112%,
   8M consumer touchpoints, rivals 40% cheaper. Canon test design: 50-client self-serve pilot,
   kill metric = activation to 2nd module in 30 days.
 - Page open in projector zoom; test the three SVG zooms (BMC, BMC-vs-Lean, VPC).
@@ -22,8 +22,8 @@ cheap tier," correct it on the spot.
 
 | Minutes | Beat | Cue |
 |---|---|---|
-| 0-3 | Welcome + Nexa moment | "Session 4's verdict: the offer must change - faster in, cheaper in. Today the whole business model goes on one page, and the counter-move gets designed as an experiment." |
-| 3-9 | Part 1: BMC | Walk the nine blocks with Nexa's current model. Teach the read: left = cost/capability, right = value/revenue, coherence is the test. Flag the two creaks: channels vs value delivery, no cheap entry in revenue. |
+| 0-3 | Welcome + Himalaya moment | "Session 4's verdict: the offer must change - faster in, cheaper in. Today the whole business model goes on one page, and the counter-move gets designed as an experiment." |
+| 3-9 | Part 1: BMC | Walk the nine blocks with Himalaya's current model. Teach the read: left = cost/capability, right = value/revenue, coherence is the test. Flag the two creaks: channels vs value delivery, no cheap entry in revenue. |
 | 9-15 | Part 2: Lean Canvas | Side-by-side diagram: exactly four blocks swap, and why (new bet = assumptions, not processes). Fill order, then the starter-tier canvas. End on riskiest assumption: "self-serve clients will activate without human onboarding." |
 | 15-20 | Part 3: VPC | Circle then square for the single-module client. Land the rule: fit is claimed left-to-right, verified with evidence - every reliever owes a churn-log line or quote. |
 | 20-28 | Apply-along 1: current-state BMC | Room fills the grid from the brief, coherence pass, circle the two creaking blocks. Close: "two creaks, not nine problems - and one is already funded by Session 2's decision." |
@@ -74,6 +74,6 @@ metric is activation to a second module in 30 days, not signups.
 **Q3: "The consumer-data 'unfair advantage' - is that real or a slide?"**
 A: Run it through VRIO, which is on the page. Valuable: plausibly, unproven in revenue. Rare
 and inimitable: genuinely yes - 8M consumer touchpoints compound with time and the rivals
-start from zero. Organized: honestly, no - nobody at Nexa monetizes it today. So it is a real
+start from zero. Organized: honestly, no - nobody at Himalaya monetizes it today. So it is a real
 asset and not yet a moat; the O is an org-design action, and that is exactly how it should be
 presented to the board rather than as a comfort blanket.

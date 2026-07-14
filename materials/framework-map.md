@@ -97,7 +97,7 @@ teaches the working 80% of each framework; the original books/papers stay the de
 |---|---|---|
 | Framework-selection decision tree ("which model when") | ✓ | This course |
 | Stacking frameworks into one board narrative | ✓ | Minto + Rumelt kernel (diagnosis → policy → action) |
-| Nexa final recommendation walkthrough | ✓ | Running case |
+| Himalaya final recommendation walkthrough | ✓ | Running case |
 | Anti-patterns: framework theater, SWOT graveyard | ◐ | Rumelt, *Good Strategy Bad Strategy* |
 | OKR as execution bridge | ◐ | Andy Grove; John Doerr |
 | Balanced scorecard | ◐ | Kaplan & Norton, HBR 1992 |

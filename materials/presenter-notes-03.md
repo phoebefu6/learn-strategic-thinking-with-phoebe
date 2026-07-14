@@ -6,7 +6,7 @@ Companion to `courses/03-find-the-real-problem.html`. The page is the projection
 
 - Room: whiteboard or flip chart per group of 3-4, markers tested. Your main board split in half BEFORE the session: left half pre-ruled with the empty is/is-not grid (4 rows x 3 columns), right half blank for the live 5-whys chain.
 - A second board or flip chart for Apply-along 3's fishbone - the win-rate fishbone must not overwrite the churn work; both artifacts need to survive to the end of the session.
-- Print the Nexa case brief (same one-pager). The is/is-not exercise is only as fast as the facts under people's hands.
+- Print the Himalaya case brief (same one-pager). The is/is-not exercise is only as fast as the facts under people's hands.
 - Bring Session 1's circled tree (or the spare printout) and Session 2's matrix verdict. Open by physically pointing at both: decided there, proving here.
 - Open the session page, projector zoom on, cards collapsed. Check the fishbone SVG is legible from the back row - it is the densest diagram so far.
 
@@ -43,7 +43,7 @@ Companion to `courses/03-find-the-real-problem.html`. The page is the projection
 Toyota built the most studied production system in history on it, and every serious incident-review culture in tech runs a version of it. The toy version - five unverified sentences ending in blame - deserves the reputation. The real version has two teeth: the vanish test on every link, and the ban on human-error roots. With teeth in, it is the fastest route from symptom to fixable process anyone has found.
 
 **"What if the room disagrees on one of the whys?"**
-That disagreement is a gift: it means the chain branches, and both branches are candidate roots. Draw both, then let evidence arbitrate - which branch survives the is/is-not grid? At Nexa the fork was real: no playbook AND poor in-product discovery. One got fixed now, one got parked visibly for Session 5. Disagreement handled this way produces MORE diagnosis, not less.
+That disagreement is a gift: it means the chain branches, and both branches are candidate roots. Draw both, then let evidence arbitrate - which branch survives the is/is-not grid? At Himalaya the fork was real: no playbook AND poor in-product discovery. One got fixed now, one got parked visibly for Session 5. Disagreement handled this way produces MORE diagnosis, not less.
 
 **"We decided in Session 2 before diagnosing in Session 3. Isn't that backwards?"**
 Deliberately not - and it is the most realistic sequencing in the course. The Session 2 bet was a two-way door: cheap to start, cheap to stop. When the bet is reversible, starting before certainty is rational; what is NOT rational is never doing the diagnosis. Today's proof means we now KNOW the playbook is aimed at the root. Had the root turned out different, the door swings back - that is exactly what we paid for by choosing the reversible option.

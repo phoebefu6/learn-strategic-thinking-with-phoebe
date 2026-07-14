@@ -1,12 +1,12 @@
 # Presenter notes - Session 6 · Plan the climb
 
-45 minutes live. Audience includes the chairman and C-level - this is the "C-level path stop" session. The single job: land that growth planning is portfolio work with three lenses (lifecycle, horizons, direction), and that all three point at the same first move for Nexa.
+45 minutes live. Audience includes the chairman and C-level - this is the "C-level path stop" session. The single job: land that growth planning is portfolio work with three lenses (lifecycle, horizons, direction), and that all three point at the same first move for Himalaya.
 
 ## Preflight
 
 - Whiteboard + markers per table (each table sketches the Greiner curve and the Ansoff 2x2)
-- Sticky notes - one per Nexa initiative for Apply-along 3 (activation fix, starter tier, AI copilot, enterprise push, consumer monetization)
-- Printed Nexa brief on tables (the numbers: $40M ARR, growth 45% to 12%, NRR 98%, churn 14%, win rate 22%)
+- Sticky notes - one per Himalaya initiative for Apply-along 3 (activation fix, starter tier, AI copilot, enterprise push, consumer monetization)
+- Printed Himalaya brief on tables (the numbers: $40M ARR, growth 45% to 12%, NRR 98%, churn 14%, win rate 22%)
 - Photos of Session 2's decision matrix and Session 5's canvases on standby - you will reference both verdicts
 - Projector zoom tested on Diagram 1 (the Greiner curve is the hero; crisis labels must be readable from the back row)
 - Have the Session 2 line ready to quote: "copilot parked as Horizon 2" - today is where that placement gets its logic
@@ -19,7 +19,7 @@
 | 3-10 | Part 1 · Lifecycle + Greiner (the anchor) | Hero diagram. Punchline: "each phase's fix manufactures the next crisis." Land the reframe: weeks-long onboarding is a lifecycle symptom, not laziness. Nobody in this room gets blamed - the SYSTEM aged. |
 | 10-15 | Part 2 · Three Horizons | Diagram 2. The discipline is budget AND yardstick per horizon: H1 margin, H2 trajectory, H3 learning. Tell the annual-budget-massacre story - it is the one execs recognize. |
 | 15-20 | Part 3 · Ansoff | Diagram 3. Risk rises as you leave home; one new variable per move. Callback: the enterprise push lost Session 2's matrix BECAUSE it was a new-market move while home was leaking. |
-| 20-28 | Apply-along 1 · Place Nexa on the curve | Tables mark the stage with evidence, name the crisis symptom. Push past vibes: "which number from the brief says late growth?" |
+| 20-28 | Apply-along 1 · Place Himalaya on the curve | Tables mark the stage with evidence, name the crisis symptom. Push past vibes: "which number from the brief says late growth?" |
 | 28-36 | Apply-along 2 · Build the horizon portfolio | Placements are fast (canon); spend the time on the split argument and the yardstick row. The yardstick row is the payoff. |
 | 36-42 | Apply-along 3 · Map onto Ansoff | Sticky notes onto the 2x2, then say the funding chain out loud. Close on the convergence: three lenses, one first move. |
 | 42-45 | Quiz + Q&A | Run the three quiz questions as a room vote, then open the floor. |

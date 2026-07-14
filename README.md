@@ -19,7 +19,7 @@ Live site: https://phoebefu6.github.io/learn-strategic-thinking-with-phoebe/
 
 ## The running case
 
-**Nexa** - a fictional $40M ARR B2B2C SaaS platform whose growth has stalled. Every session diagnoses, decides, or designs for it; Session 8 delivers its board recommendation. Case bible: `materials/nexa-case.md`.
+**Himalaya** - a fictional $40M ARR B2B2C SaaS platform whose growth has stalled. Every session diagnoses, decides, or designs for it; Session 8 delivers its board recommendation. Case bible: `materials/himalaya-case.md`.
 
 ## Structure
 

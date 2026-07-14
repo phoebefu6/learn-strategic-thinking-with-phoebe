@@ -5,7 +5,7 @@ Companion to `courses/01-think-like-a-strategist.html`. The page is the projecti
 ## Preflight
 
 - Room: whiteboard or flip chart per group of 3-4, plus one main board you own. Markers tested (dead markers kill the MECE moment).
-- Print the Nexa case brief, one per seat: $40M ARR, growth 45% to 12%, NRR 118 to 98, churn 14% concentrated single-module, win rate 31 to 22, two AI-native rivals 40% cheaper. People need the numbers under their hands during the apply-alongs.
+- Print the Himalaya case brief, one per seat: $40M ARR, growth 45% to 12%, NRR 118 to 98, churn 14% concentrated single-module, win rate 31 to 22, two AI-native rivals 40% cheaper. People need the numbers under their hands during the apply-alongs.
 - Open the session page beforehand, click "Projector zoom: on", collapse all cards. Expand only when you reach them - the reveal keeps attention.
 - Pre-draw a faint spine of the issue tree on your main board (root box only). You will grow it live in Apply-along 2.
 - Know the audience: a chairman and C-level are in the room. Address examples upward ("when you get four minutes with the board") - never downward.
@@ -14,9 +14,9 @@ Companion to `courses/01-think-like-a-strategist.html`. The page is the projecti
 
 | Minute | Beat | Cue |
 |---|---|---|
-| 0-3 | Welcome + Nexa intro | Read the board question aloud: "why is growth stalling?" Let three seconds of silence make the point - everyone has an opinion, nobody has structure. |
+| 0-3 | Welcome + Himalaya intro | Read the board question aloud: "why is growth stalling?" Let three seconds of silence make the point - everyone has an opinion, nobody has structure. |
 | 3-8 | Part 1 · MECE | Show the messy-vs-clean SVG. Run the two tests on the messy side with the room shouting answers. |
-| 8-13 | Part 2 · Issue trees | Walk the Nexa tree SVG top to bottom. Point at the two ⚠ leaves - "remember these, Session 3 digs them." |
+| 8-13 | Part 2 · Issue trees | Walk the Himalaya tree SVG top to bottom. Point at the two ⚠ leaves - "remember these, Session 3 digs them." |
 | 13-17 | Part 3 · Pyramid | Tell the email story from the example callout. Then the SVG: read it top-down once, bottom-up once. |
 | 17-19 | Part 4 · 80/20 | Keep it brisk - it is a permission slip, not a framework. Land the "say what you are deferring" sentence. |
 | 19-26 | Apply-along 1 · MECE carve | 2 min solo, 3 min pairs, 2 min converge. Hint for stuck tables: "what is the revenue formula?" |
@@ -46,4 +46,4 @@ Agree, then reframe: nobody needs the word MECE, they need the two tests. Ask th
 The opposite, in practice: boards stop listening when they smell a buried conclusion. Answer-first plus visible reasoning invites challenge at the right altitude - the reasons - instead of ambush at the end. And if the answer is going to be rejected, better in minute one with time to discuss than in minute nineteen without.
 
 **"Our real problem is not structure, it is that the data is a mess."**
-Both true and compatible. The tree tells you WHICH data is worth cleaning first - Nexa needs churn by cohort and win rate by segment, not a warehouse renovation. Structure is how you avoid boiling the data ocean; that is 80/20 applied to the data team's backlog.
+Both true and compatible. The tree tells you WHICH data is worth cleaning first - Himalaya needs churn by cohort and win rate by segment, not a warehouse renovation. Structure is how you avoid boiling the data ocean; that is 80/20 applied to the data team's backlog.

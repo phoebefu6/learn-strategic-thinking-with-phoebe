@@ -8,8 +8,8 @@ Companion to `courses/08-the-strategy-stack.html`. This is the finale: selection
 - **Pre-warn 3 pitch volunteers** for Apply-along 3. Recruit them a day ahead (ideally one senior voice - if the chairman or a C-level volunteers, the room's attention triples). Tell them the format: 90 seconds, standing, no slides, answer first.
 - Have Session 8 page open with cards collapsed; test projector zoom.
 - Print copies of `materials/framework-map.md` - one per seat. Physically handing it over is the closing move.
-- Have Nexa's numbers in your head: $40M ARR, growth 45% to 12%, NRR 118% to 98%, churn 14% concentrated single-module, win rate 31% to 22%, ~30 months runway, $8M/yr NRR swing.
-- Re-read the canon decisions in `materials/nexa-case.md` - the pitch you deliver in Part 3 must match them word for word.
+- Have Himalaya's numbers in your head: $40M ARR, growth 45% to 12%, NRR 118% to 98%, churn 14% concentrated single-module, win rate 31% to 22%, ~30 months runway, $8M/yr NRR swing.
+- Re-read the canon decisions in `materials/himalaya-case.md` - the pitch you deliver in Part 3 must match them word for word.
 
 ## Run of show
 
@@ -17,7 +17,7 @@ Companion to `courses/08-the-strategy-stack.html`. This is the finale: selection
 |---|---|---|
 | 0-3 | Welcome + arc recap | "Seven sessions, seven artifacts, zero new frameworks today. Today we make them one thing." |
 | 3-10 | Part 1 · Which framework when | Walk the decision tree diagram slowly - it is the hero. Then the three selection rules + 60-second triage. |
-| 10-16 | Part 2 · Stacking into one narrative | Kernel diagram: watch S1-S7 slot in. Bad-strategy tells, then the coherence test on Nexa's H1-H2-H3 chain. |
+| 10-16 | Part 2 · Stacking into one narrative | Kernel diagram: watch S1-S7 slot in. Bad-strategy tells, then the coherence test on Himalaya's H1-H2-H3 chain. |
 | 16-20 | Part 3 · The board pitch | Deliver the 120-word pitch FROM MEMORY, standing. Then the chairman's five questions table. |
 | 20-27 | Apply-along 1 · Triage drill | Read the 6 questions one at a time, 45 seconds each. Debrief the two traps (new tier, AI story). |
 | 27-35 | Apply-along 2 · Write YOUR kernel | Solo writing on their real problem. Circulate. Then neighbor swap: read the diagnosis back in your own words. |

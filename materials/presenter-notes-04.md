@@ -1,7 +1,7 @@
 # Presenter notes - Session 4 · Read the battlefield
 
 45 minutes live. Audience includes the chairman and C-level - keep every framework tied to a
-Nexa number and end every tool on an action, not a list.
+Himalaya number and end every tool on an action, not a list.
 
 ## Preflight
 
@@ -9,7 +9,7 @@ Nexa number and end every tool on an action, not a list.
   S×O offensive, W×O improve, S×T defend, W×T survive). Leave the arrows for the live moment.
 - Second whiteboard or flipchart: blank Five Forces layout (rivalry center, entrants top,
   buyers right, suppliers left, substitutes bottom) with room for HIGH/MED/LOW stickers.
-- Print or project the Nexa brief numbers: win rate 31% to 22%, churn 14% single-module,
+- Print or project the Himalaya brief numbers: win rate 31% to 22%, churn 14% single-module,
   NRR 98% falling (multi-module 112%), rivals 40% cheaper onboarding in days, 8M consumers.
 - Tables have pens and paper; one PESTEL letter card per table for the speed round.
 - Page open in projector zoom mode; test the three SVG zooms (SWOT/TOWS, Five Forces, PESTEL).
@@ -19,9 +19,9 @@ Nexa number and end every tool on an action, not a list.
 
 | Minutes | Beat | Cue |
 |---|---|---|
-| 0-3 | Welcome + Nexa moment | "Sessions 1-3 looked inward. Meanwhile win rate went 31 to 22. Today we look outside - before Session 5 redesigns the offer." |
+| 0-3 | Welcome + Himalaya moment | "Sessions 1-3 looked inward. Meanwhile win rate went 31 to 22. Today we look outside - before Session 5 redesigns the offer." |
 | 3-9 | Part 1: SWOT graveyard, TOWS fix | Show the filled SWOT, then draw the crossing arrows live. Land the line: "lists describe, pairs decide." Honest-SWOT rules fast: relative strengths, external threats, fact per entry. |
-| 9-15 | Part 2: Five Forces | Walk the five boxes with Nexa's read and scores. The turn: "forces tell you WHERE pressure comes from, hence which moat to build." Name the two moat candidates. |
+| 9-15 | Part 2: Five Forces | Walk the five boxes with Himalaya's read and scores. The turn: "forces tell you WHERE pressure comes from, hence which moat to build." Name the two moat candidates. |
 | 15-19 | Part 3: PESTEL | Six lanes fast, then trim: "a watchlist, not an essay." Star T and L, assign the idea of owners. |
 | 19-28 | Apply-along 1: SWOT to TOWS | Room fills quadrants (3 min), tables produce one S×O and one W×T play. Read aloud. Expected: monetize consumer data / fix onboarding speed. |
 | 28-36 | Apply-along 2: score the forces | Tables score with evidence, argue disagreements, then answer "which moat do we build?" Close: depth now, consumer network later - Session 6 places them on horizons. |

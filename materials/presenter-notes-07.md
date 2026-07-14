@@ -6,7 +6,7 @@
 
 - Calculators or phones out on tables - announce it up front so Apply-along 3 does not stall
 - Whiteboard + markers per table (two lifecycle roads get drawn in Apply-along 1)
-- Printed Nexa brief (numbers used constantly today: $33k median, ~75% GM, churn 14%, NRR 98%, win rate 22%, 8M consumers)
+- Printed Himalaya brief (numbers used constantly today: $33k median, ~75% GM, churn 14%, NRR 98%, win rate 22%, 8M consumers)
 - Session 5 starter-tier canvas photo on standby - Apply-along 2 instruments it
 - Session 6 horizon board photo on standby - the opening callback ("H1 = fix the leak") takes ten seconds with the picture up
 - Projector zoom tested on Diagram 1 (the lifecycle pipeline is the hero; the leak bracket under onboard-adopt must be visible from the back)
@@ -16,7 +16,7 @@
 
 | Minutes | Beat | Cue |
 |---|---|---|
-| 0-3 | Where we are | "Session 6 said H1 = fix the leak. Today we find every leak, price them, and meet Nexa's second customer." |
+| 0-3 | Where we are | "Session 6 said H1 = fix the leak. Today we find every leak, price them, and meet Himalaya's second customer." |
 | 3-10 | Part 1 · Customer lifecycle (the anchor) | Hero diagram. The reframe: "the leak everyone calls churn happens two stages earlier, at onboard to adopt." Then the twist: draw the consumer road - 8M people, acquired for clients, never nurtured. |
 | 10-15 | Part 2 · AARRR | Funnel diagram. One metric per level, weekly. The rule: fix the biggest leak CLOSEST to revenue - activation, not acquisition. Tell the forty-metric-funeral story. |
 | 15-20 | Part 3 · LTV / CAC | Walk the napkin table slowly, line by line, on screen: $33k → $24.8k → lifetime → LTV. Land the $150k gap. Then the 3:1 rule and its abuse - blends hide the bleeding cohort. |
@@ -28,7 +28,7 @@
 ## Never-cut beats
 
 - The reframe sentence: "churn is where the leak is COUNTED, onboard to adopt is where it HAPPENS." The whole session hangs on it, and Session 8 quotes it.
-- The second lifecycle. The consumer road is what makes Nexa's strategy different from any generic SaaS turnaround - and it is the bridge to Session 6's H3 option and Session 8's moat story.
+- The second lifecycle. The consumer road is what makes Himalaya's strategy different from any generic SaaS turnaround - and it is the bridge to Session 6's H3 option and Session 8's moat story.
 - The napkin walked line by line. Do not flash the finished table; build it. Execs trust arithmetic they watched happen.
 - Apply-along 3's money sentence written down verbatim - "each converted client is roughly $150k of LTV uplift." It goes into the board narrative word for word.
 
