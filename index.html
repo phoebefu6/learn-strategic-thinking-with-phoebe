@@ -44,6 +44,17 @@
   .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
   .path .pstep:hover { background: var(--indigo); color: #fff; }
   .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff, #F6FAFD); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
 </style>
 </head>
 <body>
@@ -63,6 +74,12 @@
 </header>
 
 <main class="wrap">
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole course at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
   <section class="section">
     <div class="course-grid">
       <a class="course-card" href="courses/01-think-like-a-strategist.html" style="--diff:#34D399">
@@ -169,6 +186,55 @@
   </footer>
 </main>
 
+<script>
+window.MINDMAP_DATA = {
+  title: "Strategic\nThinking",
+  centerColor: "#123A29",
+  sessions: [
+    { label: "Structure\nbefore answers", href: "courses/01-think-like-a-strategist.html", color: "#34D399",
+      concepts: [
+        { label: "MECE", href: "courses/01-think-like-a-strategist.html" },
+        { label: "Issue trees", href: "courses/01-think-like-a-strategist.html" },
+        { label: "Pyramid Principle", href: "courses/01-think-like-a-strategist.html" } ] },
+    { label: "Decide with\nconfidence", href: "courses/02-decide-with-confidence.html", color: "#34D399",
+      concepts: [
+        { label: "Decision matrix", href: "courses/02-decide-with-confidence.html" },
+        { label: "One vs two-way", href: "courses/02-decide-with-confidence.html" },
+        { label: "Pre-mortem", href: "courses/02-decide-with-confidence.html" } ] },
+    { label: "Find the\nreal problem", href: "courses/03-find-the-real-problem.html", color: "#FBBF24",
+      concepts: [
+        { label: "5 Whys", href: "courses/03-find-the-real-problem.html" },
+        { label: "Fishbone", href: "courses/03-find-the-real-problem.html" },
+        { label: "Is / is-not", href: "courses/03-find-the-real-problem.html" } ] },
+    { label: "Read the\nbattlefield", href: "courses/04-read-the-battlefield.html", color: "#FBBF24",
+      concepts: [
+        { label: "SWOT to TOWS", href: "courses/04-read-the-battlefield.html" },
+        { label: "Five Forces", href: "courses/04-read-the-battlefield.html" },
+        { label: "PESTEL", href: "courses/04-read-the-battlefield.html" } ] },
+    { label: "Design the\nbusiness", href: "courses/05-design-the-business.html", color: "#FB923C",
+      concepts: [
+        { label: "Model Canvas", href: "courses/05-design-the-business.html" },
+        { label: "Lean Canvas", href: "courses/05-design-the-business.html" },
+        { label: "Value Prop", href: "courses/05-design-the-business.html" } ] },
+    { label: "Plan the\nclimb", href: "courses/06-plan-the-climb.html", color: "#FB923C",
+      concepts: [
+        { label: "Greiner curve", href: "courses/06-plan-the-climb.html" },
+        { label: "Three Horizons", href: "courses/06-plan-the-climb.html" },
+        { label: "Ansoff matrix", href: "courses/06-plan-the-climb.html" } ] },
+    { label: "Grow the\ncustomer", href: "courses/07-grow-the-customer.html", color: "#FB923C",
+      concepts: [
+        { label: "Customer funnel", href: "courses/07-grow-the-customer.html" },
+        { label: "AARRR metrics", href: "courses/07-grow-the-customer.html" },
+        { label: "LTV / CAC", href: "courses/07-grow-the-customer.html" } ] },
+    { label: "The strategy\nstack", href: "courses/08-the-strategy-stack.html", color: "#F87171",
+      concepts: [
+        { label: "Framework fit", href: "courses/08-the-strategy-stack.html" },
+        { label: "Stacking", href: "courses/08-the-strategy-stack.html" },
+        { label: "Board narrative", href: "courses/08-the-strategy-stack.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
 <script src="assets/app.js?v=1"></script>
 </body>
 </html>
