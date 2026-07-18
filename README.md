@@ -1,3 +1,8 @@
+<!-- learn-with-phoebe hub banner -->
+> ### 📚 Part of [**Learn with Phoebe**](https://phoebefu6.github.io/learn-with-phoebe/)
+> The shelf of 20 free, hands-on courses on AI, data, and the craft around them. **[Browse every course ↗](https://phoebefu6.github.io/learn-with-phoebe/)**
+<!-- /learn-with-phoebe hub banner -->
+
 # learn strategic thinking with phoebe
 
 Eight 45-minute sessions teaching 50+ thinking models the way strategists actually use them - as stacks applied to one real problem, not a souvenir collection of templates. Every framework (MECE to Lean Canvas, Five Forces to pirate metrics, Rumelt's kernel to OKRs) is applied live to one running case, and by Session 8 the room has assembled a complete board-ready strategy. Built for managers through C-level: each page is a 45-minute live session plus self-study depth, with apply-along exercises, quizzes, and sources cited to their origins.
